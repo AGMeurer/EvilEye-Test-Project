@@ -76,6 +76,7 @@ struct NavigationSceleton<Content: View, BottomContent: View, NavbarLargeContent
                     content
                 }
             case .noWrapper:
+                HeaderExtra()
                 content
             }
             

@@ -42,11 +42,6 @@ struct EvilEyeApp: App {
 
 class AppDelegate: NSObject,UIApplicationDelegate{
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        print(url.absoluteString)
-        return true
-    }
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
 
@@ -67,6 +62,15 @@ class AppDelegate: NSObject,UIApplicationDelegate{
         // ...
 
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.scheme == "evileye" {
+            // Handle the URL
+            print("ARRIVED HERE")
+            return true
+        }
+        return false
     }
 }
 

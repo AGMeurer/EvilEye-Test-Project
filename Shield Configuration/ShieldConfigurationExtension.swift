@@ -16,21 +16,23 @@ import SwiftUI
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
     override func configuration(shielding application: Application) -> ShieldConfiguration {
         // Customize the shield as needed for applications.
+
         ShieldConfiguration(
-            backgroundBlurStyle: .systemMaterialDark,
+            backgroundColor: UIColor(Color.blue),
             icon: UIImage(named: "Small-Logo"),
-            title: ShieldConfiguration.Label(text: "Oii Cunt", color: UIColor(Color.blue)),
-            subtitle: ShieldConfiguration.Label(text: "You better stop jerking off", color: UIColor(Color.white)),
+            title: ShieldConfiguration.Label(text: "Evil Eye", color: UIColor(Color.blue)),
+            subtitle: ShieldConfiguration.Label(text: "We protect you", color: UIColor(Color.white)),
             primaryButtonLabel: ShieldConfiguration.Label(text: "Okay", color: UIColor(Color.white)),
             primaryButtonBackgroundColor: UIColor(Color.blue),
             secondaryButtonLabel: ShieldConfiguration.Label(text: "See app", color: UIColor(Color.white))
-            )
+        )
+        
     }
     
     override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration {
         // Customize the shield as needed for applications shielded because of their category.
         ShieldConfiguration(
-            backgroundBlurStyle: .systemUltraThinMaterial,
+            backgroundColor: UIColor(Color.blue),
             icon: UIImage(named: "Small-Logo"),
             title: ShieldConfiguration.Label(text: "Stop watching", color: UIColor(Color.blue)),
             subtitle: ShieldConfiguration.Label(text: "You've spent enough time", color: UIColor(Color.primary)),

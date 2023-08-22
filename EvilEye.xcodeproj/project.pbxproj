@@ -14,6 +14,21 @@
 		994552B22A8CD8AC00F55F58 /* EvilEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552B12A8CD8AC00F55F58 /* EvilEyeTests.swift */; };
 		994552BC2A8CD8AC00F55F58 /* EvilEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552BB2A8CD8AC00F55F58 /* EvilEyeUITests.swift */; };
 		994552BE2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552BD2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift */; };
+		9973EFDA2A8F6BA3002BC49E /* ScreenTimeReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */; };
+		9973EFDC2A8F6BA3002BC49E /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */; };
+		9973EFDE2A8F6BA3002BC49E /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */; };
+		9973EFE32A8F6BA3002BC49E /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9973EFE82A8F6BDA002BC49E /* ScreenTimeActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */; };
+		9973EFEB2A8F6EDE002BC49E /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */; };
+		9973EFEF2A8F90F1002BC49E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFEE2A8F90F1002BC49E /* AppConfig.swift */; };
+		9973EFF12A8F94E3002BC49E /* AppConfigVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */; };
+		9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF22A8F97E8002BC49E /* FocusedTextField.swift */; };
+		9973EFF52A8FA728002BC49E /* SetScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF42A8FA728002BC49E /* SetScheduleView.swift */; };
+		9973EFF72A8FAA9C002BC49E /* SetScheduleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */; };
+		9973EFFA2A8FAE99002BC49E /* AppGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF92A8FAE99002BC49E /* AppGroupCell.swift */; };
+		9973F00A2A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */; };
+		9973F0152A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */; };
+		9973F0162A8FD6B0002BC49E /* SharedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		998FDEC02A8CF1EB0051EDB7 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDEBF2A8CF1EB0051EDB7 /* SFSymbol.swift */; };
 		998FDEC22A8CF20B0051EDB7 /* PrimaryButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDEC12A8CF20B0051EDB7 /* PrimaryButtonLabel.swift */; };
 		998FDEC42A8CF2160051EDB7 /* ButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDEC32A8CF2160051EDB7 /* ButtonHelper.swift */; };
@@ -23,8 +38,7 @@
 		998FDECF2A8CF4C40051EDB7 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDECE2A8CF4C40051EDB7 /* Logo.swift */; };
 		998FDED12A8CFED10051EDB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED02A8CFED10051EDB7 /* Constants.swift */; };
 		998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */; };
-		998FDED52A8D3BF10051EDB7 /* ScreenTimeSelectAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED42A8D3BF10051EDB7 /* ScreenTimeSelectAppsView.swift */; };
-		998FDED72A8D5A1F0051EDB7 /* DeviceActivityMonitorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED62A8D5A1F0051EDB7 /* DeviceActivityMonitorVM.swift */; };
+		998FDED52A8D3BF10051EDB7 /* AppsConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */; };
 		998FDED92A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */; };
 		998FDEF72A8D78790051EDB7 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FDEF62A8D78790051EDB7 /* ManagedSettings.framework */; };
 		998FDEF92A8D78790051EDB7 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FDEF82A8D78790051EDB7 /* ManagedSettingsUI.framework */; };
@@ -33,15 +47,12 @@
 		99C340832A8E0011009849D0 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C340712A8DFF58009849D0 /* DeviceActivity.framework */; };
 		99C340862A8E0011009849D0 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340852A8E0011009849D0 /* DeviceActivityMonitorExtension.swift */; };
 		99C3408B2A8E0011009849D0 /* DeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99C340822A8E0011009849D0 /* DeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		99C340962A8E002F009849D0 /* ScreenTimeReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340952A8E002F009849D0 /* ScreenTimeReport.swift */; };
-		99C340982A8E002F009849D0 /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340972A8E002F009849D0 /* TotalActivityReport.swift */; };
-		99C3409A2A8E002F009849D0 /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340992A8E002F009849D0 /* TotalActivityView.swift */; };
-		99C3409F2A8E002F009849D0 /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 99C340932A8E002F009849D0 /* ScreenTimeReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99C340B82A8E1BA0009849D0 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340B72A8E1BA0009849D0 /* Bundle+Extension.swift */; };
-		99C340BA2A8E26FE009849D0 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340B92A8E26FE009849D0 /* AppGroup.swift */; };
+		99C340BA2A8E26FE009849D0 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340B92A8E26FE009849D0 /* ActivityEvent.swift */; };
 		99C340C02A8E86D5009849D0 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FDEF62A8D78790051EDB7 /* ManagedSettings.framework */; };
 		99C340C32A8E86D5009849D0 /* ShieldActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340C22A8E86D5009849D0 /* ShieldActionExtension.swift */; };
 		99C340C82A8E86D5009849D0 /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99C340BF2A8E86D5009849D0 /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99C340CE2A8F5BED009849D0 /* DatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340CD2A8F5BED009849D0 /* DatesHelper.swift */; };
 		99F611B92A8CD95D007719E8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 99F611B82A8CD95D007719E8 /* Kingfisher */; };
 		99F611BC2A8CD9D6007719E8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 99F611BB2A8CD9D6007719E8 /* FirebaseAnalytics */; };
 		99F611BE2A8CD9D6007719E8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 99F611BD2A8CD9D6007719E8 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -89,6 +100,34 @@
 			remoteGlobalIDString = 9945529C2A8CD8AB00F55F58;
 			remoteInfo = EvilEye;
 		};
+		9973EFE12A8F6BA3002BC49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9973EFD62A8F6BA3002BC49E;
+			remoteInfo = ScreenTimeReport;
+		};
+		9973F00B2A8FD6B0002BC49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9973EFFF2A8FD6AF002BC49E;
+			remoteInfo = SharedFramework;
+		};
+		9973F00D2A8FD6B0002BC49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9945529C2A8CD8AB00F55F58;
+			remoteInfo = EvilEye;
+		};
+		9973F0132A8FD6B0002BC49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9973EFFF2A8FD6AF002BC49E;
+			remoteInfo = SharedFramework;
+		};
 		998FDEFF2A8D78790051EDB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
@@ -103,13 +142,6 @@
 			remoteGlobalIDString = 99C340812A8E0011009849D0;
 			remoteInfo = DeviceActivityMonitor;
 		};
-		99C3409D2A8E002F009849D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99C340922A8E002F009849D0;
-			remoteInfo = ScreenTimeReport;
-		};
 		99C340C62A8E86D5009849D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
@@ -120,6 +152,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9973F01A2A8FD6B0002BC49E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9973F0162A8FD6B0002BC49E /* SharedFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998FDF052A8D78790051EDB7 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,7 +182,7 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				99C3409F2A8E002F009849D0 /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */,
+				9973EFE32A8F6BA3002BC49E /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +200,22 @@
 		994552B72A8CD8AC00F55F58 /* EvilEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvilEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994552BB2A8CD8AC00F55F58 /* EvilEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilEyeUITests.swift; sourceTree = "<group>"; };
 		994552BD2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilEyeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeReport.swift; sourceTree = "<group>"; };
+		9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		9973EFDF2A8F6BA3002BC49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9973EFE02A8F6BA3002BC49E /* ScreenTimeReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeReport.entitlements; sourceTree = "<group>"; };
+		9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeActivityReport.swift; sourceTree = "<group>"; };
+		9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
+		9973EFEE2A8F90F1002BC49E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigVM.swift; sourceTree = "<group>"; };
+		9973EFF22A8F97E8002BC49E /* FocusedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedTextField.swift; sourceTree = "<group>"; };
+		9973EFF42A8FA728002BC49E /* SetScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleView.swift; sourceTree = "<group>"; };
+		9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleVM.swift; sourceTree = "<group>"; };
+		9973EFF92A8FAE99002BC49E /* AppGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupCell.swift; sourceTree = "<group>"; };
+		9973F0002A8FD6B0002BC49E /* SharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9973F0092A8FD6B0002BC49E /* SharedFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		998FDEBF2A8CF1EB0051EDB7 /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 		998FDEC12A8CF20B0051EDB7 /* PrimaryButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonLabel.swift; sourceTree = "<group>"; };
 		998FDEC32A8CF2160051EDB7 /* ButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonHelper.swift; sourceTree = "<group>"; };
@@ -166,8 +225,7 @@
 		998FDECE2A8CF4C40051EDB7 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		998FDED02A8CFED10051EDB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSelectionVM.swift; sourceTree = "<group>"; };
-		998FDED42A8D3BF10051EDB7 /* ScreenTimeSelectAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeSelectAppsView.swift; sourceTree = "<group>"; };
-		998FDED62A8D5A1F0051EDB7 /* DeviceActivityMonitorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorVM.swift; sourceTree = "<group>"; };
+		998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsConfigView.swift; sourceTree = "<group>"; };
 		998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityScheduleVM.swift; sourceTree = "<group>"; };
 		998FDEDD2A8D70F70051EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		998FDEF42A8D78790051EDB7 /* Shield Configuration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shield Configuration.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,18 +239,13 @@
 		99C340852A8E0011009849D0 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
 		99C340872A8E0011009849D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C340882A8E0011009849D0 /* DeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
-		99C340932A8E002F009849D0 /* ScreenTimeReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		99C340952A8E002F009849D0 /* ScreenTimeReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeReport.swift; sourceTree = "<group>"; };
-		99C340972A8E002F009849D0 /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
-		99C340992A8E002F009849D0 /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
-		99C3409B2A8E002F009849D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99C3409C2A8E002F009849D0 /* ScreenTimeReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeReport.entitlements; sourceTree = "<group>"; };
 		99C340B72A8E1BA0009849D0 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		99C340B92A8E26FE009849D0 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		99C340B92A8E26FE009849D0 /* ActivityEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		99C340BF2A8E86D5009849D0 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C340C22A8E86D5009849D0 /* ShieldActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldActionExtension.swift; sourceTree = "<group>"; };
 		99C340C42A8E86D5009849D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C340C52A8E86D5009849D0 /* ShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldAction.entitlements; sourceTree = "<group>"; };
+		99C340CD2A8F5BED009849D0 /* DatesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesHelper.swift; sourceTree = "<group>"; };
 		99F611E72A8CDAE2007719E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99F611EC2A8CDE46007719E8 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		99F611EE2A8CDE4E007719E8 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
@@ -210,6 +263,7 @@
 			files = (
 				99F611DC2A8CD9D6007719E8 /* FirebaseMessaging in Frameworks */,
 				99F611C02A8CD9D6007719E8 /* FirebaseAnalyticsSwift in Frameworks */,
+				9973F0152A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */,
 				99F611DA2A8CD9D6007719E8 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				99F611E62A8CD9D6007719E8 /* FirebaseStorageCombine-Community in Frameworks */,
 				99F611E22A8CD9D6007719E8 /* FirebaseRemoteConfigSwift in Frameworks */,
@@ -248,6 +302,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9973EFD42A8F6BA3002BC49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973EFFD2A8FD6AF002BC49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973F0062A8FD6B0002BC49E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9973F00A2A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998FDEF12A8D78790051EDB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,13 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C340832A8E0011009849D0 /* DeviceActivity.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99C340902A8E002F009849D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +356,9 @@
 			isa = PBXGroup;
 			children = (
 				9945529F2A8CD8AB00F55F58 /* EvilEye */,
+				9973EFD82A8F6BA3002BC49E /* ScreenTimeReport */,
 				994552BA2A8CD8AC00F55F58 /* EvilEyeUITests */,
 				994552B02A8CD8AC00F55F58 /* EvilEyeTests */,
-				99C340942A8E002F009849D0 /* ScreenTimeReport */,
 				99C340842A8E0011009849D0 /* DeviceActivityMonitor */,
 				998FDEFA2A8D78790051EDB7 /* Shield Configuration */,
 				99C340C12A8E86D5009849D0 /* ShieldAction */,
@@ -306,8 +375,10 @@
 				994552B72A8CD8AC00F55F58 /* EvilEyeUITests.xctest */,
 				998FDEF42A8D78790051EDB7 /* Shield Configuration.appex */,
 				99C340822A8E0011009849D0 /* DeviceActivityMonitor.appex */,
-				99C340932A8E002F009849D0 /* ScreenTimeReport.appex */,
 				99C340BF2A8E86D5009849D0 /* ShieldAction.appex */,
+				9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */,
+				9973F0002A8FD6B0002BC49E /* SharedFramework.framework */,
+				9973F0092A8FD6B0002BC49E /* SharedFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,11 +426,33 @@
 			path = EvilEyeUITests;
 			sourceTree = "<group>";
 		};
+		9973EFD82A8F6BA3002BC49E /* ScreenTimeReport */ = {
+			isa = PBXGroup;
+			children = (
+				9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */,
+				9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */,
+				9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */,
+				9973EFDF2A8F6BA3002BC49E /* Info.plist */,
+				9973EFE02A8F6BA3002BC49E /* ScreenTimeReport.entitlements */,
+				9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */,
+			);
+			path = ScreenTimeReport;
+			sourceTree = "<group>";
+		};
+		9973EFF82A8FAE8F002BC49E /* AppGroup */ = {
+			isa = PBXGroup;
+			children = (
+				9973EFF92A8FAE99002BC49E /* AppGroupCell.swift */,
+			);
+			path = AppGroup;
+			sourceTree = "<group>";
+		};
 		998FDEBC2A8CF1810051EDB7 /* Text */ = {
 			isa = PBXGroup;
 			children = (
 				998FDEC62A8CF25D0051EDB7 /* TextModifier.swift */,
 				998FDEC82A8CF2650051EDB7 /* TextHelper.swift */,
+				9973EFF22A8F97E8002BC49E /* FocusedTextField.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -420,18 +513,6 @@
 			path = DeviceActivityMonitor;
 			sourceTree = "<group>";
 		};
-		99C340942A8E002F009849D0 /* ScreenTimeReport */ = {
-			isa = PBXGroup;
-			children = (
-				99C340952A8E002F009849D0 /* ScreenTimeReport.swift */,
-				99C340972A8E002F009849D0 /* TotalActivityReport.swift */,
-				99C340992A8E002F009849D0 /* TotalActivityView.swift */,
-				99C3409B2A8E002F009849D0 /* Info.plist */,
-				99C3409C2A8E002F009849D0 /* ScreenTimeReport.entitlements */,
-			);
-			path = ScreenTimeReport;
-			sourceTree = "<group>";
-		};
 		99C340B62A8E1B8C009849D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,13 +531,30 @@
 			path = ShieldAction;
 			sourceTree = "<group>";
 		};
+		99C340CC2A8F5BE4009849D0 /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				99C340CD2A8F5BED009849D0 /* DatesHelper.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		99C340CF2A8F5FA3009849D0 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
 		99F611B22A8CD915007719E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				99F611EA2A8CDE21007719E8 /* Authentication */,
 				99F611E92A8CDE19007719E8 /* TabsView */,
 				99F611F92A8CE8D7007719E8 /* Profile */,
-				99F611EB2A8CDE30007719E8 /* Overview */,
+				99F611EB2A8CDE30007719E8 /* Schedule */,
+				99C340CF2A8F5FA3009849D0 /* Monitor */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,8 +564,8 @@
 			children = (
 				99F611F62A8CE89B007719E8 /* Navigation */,
 				99F611F02A8CDE5E007719E8 /* Family Controls */,
-				99F611F22A8CE34F007719E8 /* Managed Settings */,
 				99F611F32A8CE358007719E8 /* Device Activiy */,
+				99F611F22A8CE34F007719E8 /* Managed Settings */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -475,7 +573,8 @@
 		99F611B42A8CD91E007719E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				99C340B92A8E26FE009849D0 /* AppGroup.swift */,
+				99C340B92A8E26FE009849D0 /* ActivityEvent.swift */,
+				9973EFEE2A8F90F1002BC49E /* AppConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,6 +592,8 @@
 		99F611B62A8CD928007719E8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9973EFF82A8FAE8F002BC49E /* AppGroup */,
+				99C340CC2A8F5BE4009849D0 /* Dates */,
 				998FDECA2A8CF3360051EDB7 /* Navigation */,
 				998FDEBE2A8CF1C80051EDB7 /* Buttons */,
 				998FDEBD2A8CF1860051EDB7 /* Icons */,
@@ -517,19 +618,21 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		99F611EB2A8CDE30007719E8 /* Overview */ = {
+		99F611EB2A8CDE30007719E8 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
 				99F611EE2A8CDE4E007719E8 /* OverviewView.swift */,
-				998FDED42A8D3BF10051EDB7 /* ScreenTimeSelectAppsView.swift */,
+				998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */,
+				9973EFF42A8FA728002BC49E /* SetScheduleView.swift */,
 			);
-			path = Overview;
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		99F611F02A8CDE5E007719E8 /* Family Controls */ = {
 			isa = PBXGroup;
 			children = (
 				99F611F42A8CE393007719E8 /* FamilyControlsVM.swift */,
+				9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */,
 				998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */,
 			);
 			path = "Family Controls";
@@ -545,8 +648,8 @@
 		99F611F32A8CE358007719E8 /* Device Activiy */ = {
 			isa = PBXGroup;
 			children = (
-				998FDED62A8D5A1F0051EDB7 /* DeviceActivityMonitorVM.swift */,
 				998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */,
+				9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */,
 			);
 			path = "Device Activiy";
 			sourceTree = "<group>";
@@ -569,6 +672,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9973EFFB2A8FD6AF002BC49E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		9945529C2A8CD8AB00F55F58 /* EvilEye */ = {
 			isa = PBXNativeTarget;
@@ -579,14 +692,16 @@
 				9945529B2A8CD8AB00F55F58 /* Resources */,
 				998FDF052A8D78790051EDB7 /* Embed Foundation Extensions */,
 				99C340A32A8E002F009849D0 /* Embed ExtensionKit Extensions */,
+				9973F01A2A8FD6B0002BC49E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				998FDF002A8D78790051EDB7 /* PBXTargetDependency */,
 				99C3408A2A8E0011009849D0 /* PBXTargetDependency */,
-				99C3409E2A8E002F009849D0 /* PBXTargetDependency */,
 				99C340C72A8E86D5009849D0 /* PBXTargetDependency */,
+				9973EFE22A8F6BA3002BC49E /* PBXTargetDependency */,
+				9973F0142A8FD6B0002BC49E /* PBXTargetDependency */,
 			);
 			name = EvilEye;
 			packageProductDependencies = (
@@ -654,6 +769,60 @@
 			productReference = 994552B72A8CD8AC00F55F58 /* EvilEyeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9973EFE42A8F6BA3002BC49E /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */;
+			buildPhases = (
+				9973EFD32A8F6BA3002BC49E /* Sources */,
+				9973EFD42A8F6BA3002BC49E /* Frameworks */,
+				9973EFD52A8F6BA3002BC49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenTimeReport;
+			productName = ScreenTimeReport;
+			productReference = 9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		9973EFFF2A8FD6AF002BC49E /* SharedFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9973F0172A8FD6B0002BC49E /* Build configuration list for PBXNativeTarget "SharedFramework" */;
+			buildPhases = (
+				9973EFFB2A8FD6AF002BC49E /* Headers */,
+				9973EFFC2A8FD6AF002BC49E /* Sources */,
+				9973EFFD2A8FD6AF002BC49E /* Frameworks */,
+				9973EFFE2A8FD6AF002BC49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedFramework;
+			productName = SharedFramework;
+			productReference = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9973F0082A8FD6B0002BC49E /* SharedFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9973F01B2A8FD6B0002BC49E /* Build configuration list for PBXNativeTarget "SharedFrameworkTests" */;
+			buildPhases = (
+				9973F0052A8FD6B0002BC49E /* Sources */,
+				9973F0062A8FD6B0002BC49E /* Frameworks */,
+				9973F0072A8FD6B0002BC49E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9973F00C2A8FD6B0002BC49E /* PBXTargetDependency */,
+				9973F00E2A8FD6B0002BC49E /* PBXTargetDependency */,
+			);
+			name = SharedFrameworkTests;
+			productName = SharedFrameworkTests;
+			productReference = 9973F0092A8FD6B0002BC49E /* SharedFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		998FDEF32A8D78790051EDB7 /* Shield Configuration */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998FDF022A8D78790051EDB7 /* Build configuration list for PBXNativeTarget "Shield Configuration" */;
@@ -687,23 +856,6 @@
 			productName = DeviceActivityMonitor;
 			productReference = 99C340822A8E0011009849D0 /* DeviceActivityMonitor.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		99C340922A8E002F009849D0 /* ScreenTimeReport */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99C340A02A8E002F009849D0 /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */;
-			buildPhases = (
-				99C3408F2A8E002F009849D0 /* Sources */,
-				99C340902A8E002F009849D0 /* Frameworks */,
-				99C340912A8E002F009849D0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ScreenTimeReport;
-			productName = ScreenTimeReport;
-			productReference = 99C340932A8E002F009849D0 /* ScreenTimeReport.appex */;
-			productType = "com.apple.product-type.extensionkit-extension";
 		};
 		99C340BE2A8E86D5009849D0 /* ShieldAction */ = {
 			isa = PBXNativeTarget;
@@ -743,13 +895,20 @@
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 9945529C2A8CD8AB00F55F58;
 					};
+					9973EFD62A8F6BA3002BC49E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					9973EFFF2A8FD6AF002BC49E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					9973F0082A8FD6B0002BC49E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 9945529C2A8CD8AB00F55F58;
+					};
 					998FDEF32A8D78790051EDB7 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 					99C340812A8E0011009849D0 = {
-						CreatedOnToolsVersion = 14.3;
-					};
-					99C340922A8E002F009849D0 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 					99C340BE2A8E86D5009849D0 = {
@@ -779,8 +938,10 @@
 				994552B62A8CD8AC00F55F58 /* EvilEyeUITests */,
 				998FDEF32A8D78790051EDB7 /* Shield Configuration */,
 				99C340812A8E0011009849D0 /* DeviceActivityMonitor */,
-				99C340922A8E002F009849D0 /* ScreenTimeReport */,
 				99C340BE2A8E86D5009849D0 /* ShieldAction */,
+				9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */,
+				9973EFFF2A8FD6AF002BC49E /* SharedFramework */,
+				9973F0082A8FD6B0002BC49E /* SharedFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -810,6 +971,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9973EFD52A8F6BA3002BC49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973EFFE2A8FD6AF002BC49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973F0072A8FD6B0002BC49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998FDEF22A8D78790051EDB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -818,13 +1000,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		99C340802A8E0011009849D0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99C340912A8E002F009849D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -847,26 +1022,33 @@
 			files = (
 				998FDECC2A8CF3400051EDB7 /* NavigationSceleton.swift in Sources */,
 				99C340B82A8E1BA0009849D0 /* Bundle+Extension.swift in Sources */,
+				9973EFEB2A8F6EDE002BC49E /* MonitoringView.swift in Sources */,
 				998FDECF2A8CF4C40051EDB7 /* Logo.swift in Sources */,
 				998FDEC92A8CF2650051EDB7 /* TextHelper.swift in Sources */,
 				998FDEC42A8CF2160051EDB7 /* ButtonHelper.swift in Sources */,
 				99F611F52A8CE393007719E8 /* FamilyControlsVM.swift in Sources */,
-				998FDED52A8D3BF10051EDB7 /* ScreenTimeSelectAppsView.swift in Sources */,
-				998FDED72A8D5A1F0051EDB7 /* DeviceActivityMonitorVM.swift in Sources */,
+				9973EFF52A8FA728002BC49E /* SetScheduleView.swift in Sources */,
+				9973EFF72A8FAA9C002BC49E /* SetScheduleVM.swift in Sources */,
+				998FDED52A8D3BF10051EDB7 /* AppsConfigView.swift in Sources */,
 				99F611ED2A8CDE46007719E8 /* TabsView.swift in Sources */,
 				99F611F82A8CE8A5007719E8 /* NavigationVM.swift in Sources */,
 				998FDED12A8CFED10051EDB7 /* Constants.swift in Sources */,
-				99C340BA2A8E26FE009849D0 /* AppGroup.swift in Sources */,
+				99C340BA2A8E26FE009849D0 /* ActivityEvent.swift in Sources */,
 				994552A32A8CD8AB00F55F58 /* ContentView.swift in Sources */,
 				998FDEC72A8CF25D0051EDB7 /* TextModifier.swift in Sources */,
 				994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */,
 				99F611FD2A8CEEC5007719E8 /* NotApprovedView.swift in Sources */,
 				99F611FB2A8CE8DF007719E8 /* ProfileView.swift in Sources */,
 				998FDEC22A8CF20B0051EDB7 /* PrimaryButtonLabel.swift in Sources */,
+				99C340CE2A8F5BED009849D0 /* DatesHelper.swift in Sources */,
+				9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */,
 				998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */,
 				99F611EF2A8CDE4E007719E8 /* OverviewView.swift in Sources */,
+				9973EFFA2A8FAE99002BC49E /* AppGroupCell.swift in Sources */,
 				998FDED92A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift in Sources */,
+				9973EFF12A8F94E3002BC49E /* AppConfigVM.swift in Sources */,
 				998FDEC02A8CF1EB0051EDB7 /* SFSymbol.swift in Sources */,
+				9973EFEF2A8F90F1002BC49E /* AppConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +1069,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9973EFD32A8F6BA3002BC49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9973EFDE2A8F6BA3002BC49E /* TotalActivityView.swift in Sources */,
+				9973EFE82A8F6BDA002BC49E /* ScreenTimeActivityReport.swift in Sources */,
+				9973EFDA2A8F6BA3002BC49E /* ScreenTimeReport.swift in Sources */,
+				9973EFDC2A8F6BA3002BC49E /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973EFFC2A8FD6AF002BC49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9973F0052A8FD6B0002BC49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998FDEF02A8D78790051EDB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -900,16 +1107,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C340862A8E0011009849D0 /* DeviceActivityMonitorExtension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99C3408F2A8E002F009849D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99C3409A2A8E002F009849D0 /* TotalActivityView.swift in Sources */,
-				99C340962A8E002F009849D0 /* ScreenTimeReport.swift in Sources */,
-				99C340982A8E002F009849D0 /* TotalActivityReport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +1131,26 @@
 			target = 9945529C2A8CD8AB00F55F58 /* EvilEye */;
 			targetProxy = 994552B82A8CD8AC00F55F58 /* PBXContainerItemProxy */;
 		};
+		9973EFE22A8F6BA3002BC49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */;
+			targetProxy = 9973EFE12A8F6BA3002BC49E /* PBXContainerItemProxy */;
+		};
+		9973F00C2A8FD6B0002BC49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9973EFFF2A8FD6AF002BC49E /* SharedFramework */;
+			targetProxy = 9973F00B2A8FD6B0002BC49E /* PBXContainerItemProxy */;
+		};
+		9973F00E2A8FD6B0002BC49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9945529C2A8CD8AB00F55F58 /* EvilEye */;
+			targetProxy = 9973F00D2A8FD6B0002BC49E /* PBXContainerItemProxy */;
+		};
+		9973F0142A8FD6B0002BC49E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9973EFFF2A8FD6AF002BC49E /* SharedFramework */;
+			targetProxy = 9973F0132A8FD6B0002BC49E /* PBXContainerItemProxy */;
+		};
 		998FDF002A8D78790051EDB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 998FDEF32A8D78790051EDB7 /* Shield Configuration */;
@@ -943,11 +1160,6 @@
 			isa = PBXTargetDependency;
 			target = 99C340812A8E0011009849D0 /* DeviceActivityMonitor */;
 			targetProxy = 99C340892A8E0011009849D0 /* PBXContainerItemProxy */;
-		};
-		99C3409E2A8E002F009849D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99C340922A8E002F009849D0 /* ScreenTimeReport */;
-			targetProxy = 99C3409D2A8E002F009849D0 /* PBXContainerItemProxy */;
 		};
 		99C340C72A8E86D5009849D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1090,7 +1302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1123,7 +1335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1210,6 +1422,162 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EvilEye;
+			};
+			name = Release;
+		};
+		9973EFE52A8F6BA3002BC49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9973EFE62A8F6BA3002BC49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9973F0182A8FD6B0002BC49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EvilEye.SharedFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9973F0192A8FD6B0002BC49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EvilEye.SharedFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9973F01C2A8FD6B0002BC49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EvilEye.SharedFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvilEye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EvilEye";
+			};
+			name = Debug;
+		};
+		9973F01D2A8FD6B0002BC49E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V5L975YGRL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EvilEye.SharedFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvilEye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EvilEye";
 			};
 			name = Release;
 		};
@@ -1317,60 +1685,6 @@
 			};
 			name = Release;
 		};
-		99C340A12A8E002F009849D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V5L975YGRL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		99C340A22A8E002F009849D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V5L975YGRL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		99C340CA2A8E86D5009849D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1462,6 +1776,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9973EFE42A8F6BA3002BC49E /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9973EFE52A8F6BA3002BC49E /* Debug */,
+				9973EFE62A8F6BA3002BC49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9973F0172A8FD6B0002BC49E /* Build configuration list for PBXNativeTarget "SharedFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9973F0182A8FD6B0002BC49E /* Debug */,
+				9973F0192A8FD6B0002BC49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9973F01B2A8FD6B0002BC49E /* Build configuration list for PBXNativeTarget "SharedFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9973F01C2A8FD6B0002BC49E /* Debug */,
+				9973F01D2A8FD6B0002BC49E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		998FDF022A8D78790051EDB7 /* Build configuration list for PBXNativeTarget "Shield Configuration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1476,15 +1817,6 @@
 			buildConfigurations = (
 				99C3408D2A8E0011009849D0 /* Debug */,
 				99C3408E2A8E0011009849D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99C340A02A8E002F009849D0 /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99C340A12A8E002F009849D0 /* Debug */,
-				99C340A22A8E002F009849D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

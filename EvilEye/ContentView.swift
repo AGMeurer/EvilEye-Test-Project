@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
+import FamilyControls
 
 struct ContentView: View {
+    
+    @EnvironmentObject var familyControlsVM: FamilyControlsVM
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Group {
+            if familyControlsVM.authorizationStatus == .approved {
+                TabsView()
+                
+            } else {
+                NotApprovedView()
+                
+            }
         }
-        .padding()
+        .environmentObject(familyControlsVM)
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

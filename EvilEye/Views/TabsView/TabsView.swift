@@ -10,11 +10,13 @@ import SwiftUI
 struct TabsView: View {
     
     @StateObject var navVM = NavigationVM()
+    @StateObject var appsSelectionVM = AppsSelectionVM()
     
     var body: some View {
         TabView(selection: $navVM.selectedTab) {
             
             OverviewView()
+                .environmentObject(appsSelectionVM)
                 .environmentObject(navVM)
                 .tabItem {
                     VStack {
@@ -24,8 +26,9 @@ struct TabsView: View {
                 }
                 .tag(0) // Tag for the first tab
             
-            ProfileView()
+            MonitoringView()
                 .environmentObject(navVM)
+                .environmentObject(appsSelectionVM)
                 .tabItem {
                     VStack {
                         Image(systemName: "person.fill")
