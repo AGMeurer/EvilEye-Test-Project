@@ -14,25 +14,15 @@ struct AppsConfigView: View {
     @Binding var showAddAppConfig: Bool
     
     var body: some View {
-        NavigationSceleton(navigationBarTitle: "Apps", subTitle: "Manage your protected Applications", navbarDisplayMode: .large, contentWrapper: .noWrapper, navType: .navigationView) {
-            
-            ///- Note: Content
-            if !appGroupVM.loadedAppConfigs.isEmpty {
-//                ListOfAppConfigs()
-            } else {
-                ProgressView()
-                    .scaleEffect(2)
-            }
+        NavigationSceleton(navigationBarTitle: "Apps", subTitle: "Manage your protected Applications", navbarDisplayMode: .large, contentWrapper: .scrollView, navType: .navigationView) {
 
+                ProtectedApps()
+                InitialAppConfigs()
+          
         } bottomContent: {
-//            ///- Note: Bottom Content
-//            Button(action: {
-//                self.appGroupVM.
-//            }, label: {
-//                PrimaryButtonLabel(buttonText: "Add App Group", buttonState: .isEligible, isProgressing: false)
-//            })
+
         } navbarLargeContent: {
-            
+            Logo(size: 70)
         } navbarLeading: {
             SFSymbolWithButtonAction(iconName: "chevron.down", size: .headline, weight: .semibold, fgColor: .primary, renderingMode: .hierarchical) {
                 
@@ -42,114 +32,63 @@ struct AppsConfigView: View {
         } navbarCenter: {
             
         } navbarTrailing: {
-            SFSymbolWithButtonAction(iconName: "plus", size: .headline, weight: .bold, fgColor: .blue, renderingMode: .hierarchical) {
-                self.appGroupVM.showFamilyPicker = true
-            }
-        }
-        .familyActivityPicker(isPresented: $appGroupVM.showFamilyPicker, selection: $appGroupVM.selection)
-//        .sheet(isPresented: $appGroupVM.showAddAppConfigSheet) {
-//           SheetContent()
-//                .presentationDragIndicator(.visible)
-//                .presentationBackground(.ultraThinMaterial)
-//                .presentationDetents([.medium])
-//        }
-//        .task {
-//           await appGroupVM.loadAppGroups()
-//        }
 
+        }
+        .task {
+            self.appGroupVM.loadAppConfigs()
+        }
     }
     
-    private func ListOfAppConfigs()-> some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                ForEach(appGroupVM.loadedAppConfigs, id: \.id) { config in
+    ///- Note: Initial App Configs (no Token)
+    @ViewBuilder
+    func InitialAppConfigs()-> some View {
+        
+        LazyVStack(alignment: .leading, spacing: 10) {
+            TextModifier(text: "Add Applications", fontConfig: .textStyle(style: .title3, weight: .semibold, design: .default), fgColor: .primary, alignment: .leading, lineLimit: 2)
+            ForEach(AppConfig.initialAppConfigs, id: \.self) { appConfig in
+                
+                if appGroupVM.loadedAppConfigs.contains(where: { $0.appName == appConfig.appName }) {
                     
-                    AppGroupCell(appGroupConfig: .list(appGroup: config))
-                    
+                } else {
+                    AddAppCell(appConfig: appConfig) { configWithToken in
+                        ///- Note: Upload Config to User Defaults
+                        self.appGroupVM.addAppConfigToProtection(configWithToken)
+                        
+                        ///- Note: Append locally
+                        withAnimation {
+                            self.appGroupVM.loadedAppConfigs.append(configWithToken)
+                        }
+                    }
                 }
             }
-            .padding(.vertical)
         }
-    }
-    
-    private func AppGroupRow(_ appConfig: AppConfig)-> some View {
-        VStack(alignment: .leading) {
-//            TextModifier(text: appConfig.selectionName, fontConfig: .textStyle(style: .title3, weight: .semibold, design: .rounded), fgColor: .blue, alignment: .leading, lineLimit: 2)
-            
-//            HStack {
-//                VStack {
-//                    ForEach(Array(appConfig.selection), id: \.self) { token in
-//                        Label(token)
-//                        
-//                    }
-//                    
-//                    ForEach(Array(appConfig.selection.categoryTokens), id: \.self) { token in
-//                        Label(token)
-//                    }
-//                    
-//                    ForEach(Array(appConfig.selection.webDomainTokens), id: \.self) { token in
-//                        Label(token)
-//                    }
-//                }
-//                Spacer()
-//            }
-//            .padding()
-//            .background {
-//                RoundedRectangle(cornerRadius: 15)
-//                    .fill(.ultraThinMaterial)
-//            }
-        }
-        .padding(.horizontal)
+        .padding([.vertical, .horizontal])
     }
     
     @ViewBuilder
-    func SheetContent()-> some View {
-        VStack(alignment: .leading) {
-            FocusedTextField(text: $appGroupVM.name, headline: "Give your group a name", placeholder: "Example: Social Media", keyboardType: .default)
-            
-//            ScrollView(.horizontal) {
-//                HStack {
-//                    ForEach(Array(appGroupVM.activeSelection.applicationTokens), id: \.self) { token in
-//                        Label(token)
-//                            .padding()
-//                            .background {
-//                                RoundedRectangle(cornerRadius: 15)
-//                                    .fill(.ultraThinMaterial)
-//                            }
-//
-//                    }
-//
-//                    ForEach(Array(appGroupVM.activeSelection.categoryTokens), id: \.self) { token in
-//                        Label(token)
-//                            .padding()
-//                            .background {
-//                                RoundedRectangle(cornerRadius: 15)
-//                                    .fill(.ultraThinMaterial)
-//                            }
-//                    }
-//
-//                    ForEach(Array(appGroupVM.activeSelection.webDomainTokens), id: \.self) { token in
-//                        Label(token)
-//                            .padding()
-//                            .background {
-//                                RoundedRectangle(cornerRadius: 15)
-//                                    .fill(.ultraThinMaterial)
-//                            }
-//                    }
-//
-//                }
-//                .padding()
-//            }
-            
-            Button(action: {
-
-//                Task { await appGroupVM.saveAppGroup(appGroupVM.activeSelection) }
-                
-            }, label: {
-                PrimaryButtonLabel(buttonText: "Add Group", buttonState: .isEligible, isProgressing: appGroupVM.isAddingAppGroup)
-            })
-            .padding(.top)
+    func ProtectedApps() -> some View {
+        LazyVStack(alignment: .leading, spacing: 10) {
+            TextModifier(text: "Protected Applications", fontConfig: .textStyle(style: .title3, weight: .semibold, design: .default), fgColor: .primary, alignment: .leading, lineLimit: 2)
+            if !appGroupVM.loadedAppConfigs.isEmpty {
+                ForEach(appGroupVM.loadedAppConfigs, id: \.self) { appConfig in
+                    AppCell(config: .normal(appConfig: appConfig, action: {
+                        
+                        ///- Note: Delete Config from User Defaults
+                        appGroupVM.deleteAppConfigFromProtection(appConfig)
+                        
+                        ///- Note: Remove locally
+                        withAnimation {
+                            self.appGroupVM.loadedAppConfigs.removeAll(where: {$0.id == appConfig.id})
+                        }
+                        
+                    }))
+                    
+                }
+            } else {
+                TextModifier(text: "No Apps to protect", fontConfig: .textStyle(style: .headline, weight: .semibold, design: .default), fgColor: .secondary, alignment: .leading, lineLimit: 2)
+            }
         }
+        .padding([.vertical, .horizontal])
     }
 }
 

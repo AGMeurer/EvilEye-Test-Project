@@ -8,6 +8,7 @@
 import Foundation
 import FamilyControls
 import Combine
+import UserNotifications
 import SwiftUI
 
 ///- Note: VM is used to request and manage Authorization status to the ScreenTime API
@@ -66,6 +67,14 @@ class FamilyControlsVM: ObservableObject {
         }
         
         
+    }
+    
+
+    func requestNotificationPermission() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+            // Handle granted and error states
+        }
     }
     
 //    func checkAuthorizationStatus() {

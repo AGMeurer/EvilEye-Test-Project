@@ -10,6 +10,7 @@
 import Foundation
 import DeviceActivity
 import FamilyControls
+import ManagedSettings
 
 // APP: Monitor a DeviceActivitySchedule
 extension DeviceActivityName {
@@ -19,11 +20,12 @@ extension DeviceActivityName {
 extension DeviceActivityEvent.Name {
     // Set the name of the event to "encouraged"
     static let discouraged = Self("discouraged")
+    static let protecting = Self("protecting")
 }
 
 class DeviceActivityScheduleVM: ObservableObject {
     
-    func setSchedule(eventName: DeviceActivityEvent.Name, applications: FamilyActivitySelection) {
+    func setSchedule(eventName: DeviceActivityEvent.Name, appToken: Set<ApplicationToken>) {
         Task {
 
             print("Setting schedule...")
@@ -33,7 +35,7 @@ class DeviceActivityScheduleVM: ObservableObject {
             let schedule = addSchedule(date: Date())
             
             //- 2 Creating a Event
-            let events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [ .discouraged: DeviceActivityEvent(applications: applications.applicationTokens,
+            let events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [ .discouraged: DeviceActivityEvent(applications: appToken,
                 threshold: DateComponents(minute: 1)
                                                                                )
             ]

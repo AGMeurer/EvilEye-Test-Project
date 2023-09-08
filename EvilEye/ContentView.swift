@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FamilyControls
+import AppIntents
 
 struct ContentView: View {
     
@@ -16,6 +17,9 @@ struct ContentView: View {
         Group {
             if familyControlsVM.authorizationStatus == .approved {
                 TabsView()
+                    .onAppear( perform: {
+                        familyControlsVM.requestNotificationPermission()
+                    })
                 
             } else {
                 NotApprovedView()

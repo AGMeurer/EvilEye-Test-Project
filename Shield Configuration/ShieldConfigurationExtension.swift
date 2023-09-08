@@ -14,17 +14,20 @@ import SwiftUI
 // The system provides a default appearance for any methods that your subclass doesn't override.
 // Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
+    
+    let image = UIImage(named: "Small-Logo")
+    
     override func configuration(shielding application: Application) -> ShieldConfiguration {
         // Customize the shield as needed for applications.
-
-        ShieldConfiguration(
-            backgroundColor: UIColor(Color.blue),
-            icon: UIImage(named: "Small-Logo"),
-            title: ShieldConfiguration.Label(text: "Evil Eye", color: UIColor(Color.blue)),
-            subtitle: ShieldConfiguration.Label(text: "We protect you", color: UIColor(Color.white)),
-            primaryButtonLabel: ShieldConfiguration.Label(text: "Okay", color: UIColor(Color.white)),
-            primaryButtonBackgroundColor: UIColor(Color.blue),
-            secondaryButtonLabel: ShieldConfiguration.Label(text: "See app", color: UIColor(Color.white))
+        
+        return ShieldConfiguration(
+            backgroundBlurStyle: .systemUltraThinMaterialDark,
+            icon: "🧿".image(with: CGSize(width: 30, height: 30)),
+            title: ShieldConfiguration.Label(text: "Protected by Evil Eye", color: UIColor(Color.white)),
+            subtitle: ShieldConfiguration.Label(text: "EvilEye helps you to reduce your screen time by protecting, not blocking you", color: UIColor(Color.white.opacity(0.7))),
+            primaryButtonLabel: ShieldConfiguration.Label(text: "Unlock more time", color: UIColor(Color.blue)),
+            primaryButtonBackgroundColor: UIColor(Color.white)
+           
         )
         
     }
@@ -66,5 +69,24 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
             primaryButtonBackgroundColor: UIColor(Color.blue),
             secondaryButtonLabel: ShieldConfiguration.Label(text: "See app", color: UIColor(Color.white))
             )
+    }
+}
+
+extension String {
+    func image(with size: CGSize) -> UIImage? {
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { context in
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: size.height)
+            ]
+            
+            let attributedString = NSAttributedString(string: self, attributes: attributes)
+            let stringSize = attributedString.size()
+            
+            let x = (size.width - stringSize.width) / 3
+            let y = (size.height - stringSize.height) / 3
+            
+            attributedString.draw(at: CGPoint(x: x, y: y))
+        }
     }
 }

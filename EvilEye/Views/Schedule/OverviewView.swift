@@ -25,13 +25,15 @@ struct OverviewView: View {
     
     @State private var openButton: Bool = false
     
+    @State var openURLSheet: Bool = false
+    
     var body: some View {
         NavigationSceleton(navigationBarTitle: "Overview", subTitle: "See what is going on", navbarDisplayMode: .large, contentWrapper: .noWrapper, navType: .navigationView) {
             ///- Note: Content
             VStack(spacing: 15) {
                 
                 SetupListView()
-
+                
             }
         } bottomContent: {
             ///- Note: Bottom Button
@@ -44,14 +46,12 @@ struct OverviewView: View {
         } navbarTrailing: {
             
         }
-//        .familyActivityPicker(isPresented: $showAppsList, selection: $appsSelectionVM.selection)
         .fullScreenCover(isPresented: $showAddAppGroup) {
             AppsConfigView(showAddAppConfig: $showAddAppGroup)
         }
         .fullScreenCover(isPresented: $showSetSchedule) {
             SetScheduleView(showSetSchedule: $showSetSchedule)
         }
-
     }
     
     private func SetupListView()-> some View {
@@ -74,22 +74,6 @@ struct OverviewView: View {
                     SFSymbol(iconName: "plus", size: .title3, weight: .bold, fgColor: .blue, renderingMode: .hierarchical)
                 }
             })
-            
-//            if appsSelectionVM.isSelectionEmpty() {
-//                Text("No Applications selected")
-//                    .foregroundColor(Color.secondary)
-//            } else {
-//                ForEach(Array(appsSelectionVM.selection.applicationTokens), id: \.self) { token in
-//                    Label(token)
-//
-//                }
-//                ForEach(Array(appsSelectionVM.selection.categoryTokens), id: \.self) { token in
-//                    Label(token)
-//                }
-//                ForEach(Array(appsSelectionVM.selection.webDomainTokens), id: \.self) { token in
-//                    Label(token)
-//                }
-//            }
             
         }
     }
