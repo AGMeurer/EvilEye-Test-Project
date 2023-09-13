@@ -18,7 +18,7 @@ struct EvilEyeApp: App {
     @Environment(\.scenePhase) var scenePhase
     
     @StateObject var  familyControlsVM = FamilyControlsVM()
-    @StateObject var navVM = NavigateVM()
+    @ObservedObject var navVM = NavigateVM.shared
     
     var body: some Scene {
         WindowGroup {

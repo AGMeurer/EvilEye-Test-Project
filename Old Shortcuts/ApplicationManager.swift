@@ -18,7 +18,7 @@ class AppManager {
     }
     
     func findApp(withId identifier: UUID) throws -> ApplicationEntity? {
-//        ApplicationEntity.allApplications.filter { $0.appName == searchName }
+        //        ApplicationEntity.allApplications.filter { $0.appName == searchName }
         return ApplicationEntity.allApplications.first(where: { $0.id == identifier })
     }
 }
