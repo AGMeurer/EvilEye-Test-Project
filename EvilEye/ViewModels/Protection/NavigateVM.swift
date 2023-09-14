@@ -8,20 +8,20 @@
 import Foundation
 import SwiftUI
 
-class NavigateVM: ObservableObject {
+class ProtectionVM: ObservableObject {
     
-    static var shared = NavigateVM()
+    static var shared = ProtectionVM()
     
     @Published var selectedTab: Int = 0
     
-    @Published var openSheet: Bool = false
+    @Published var openProtectionScreen: Bool = false
     @Published var app: AppToProtect?
     
     @Published var token: String = ""
     
     ///- Note: This function determines, what will happen when the Shortcut gets triggered, and the Main Target opens
     func handleIntent(app: AppToProtect) {
-        self.openSheet = true
+        self.openProtectionScreen = true
         self.app = app
         
     }

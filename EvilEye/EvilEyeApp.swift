@@ -13,21 +13,20 @@ import FirebaseCore
 struct EvilEyeApp: App {
     
     ///- Note: App Delegate
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     ///- Note: Observing scene Phases
     @Environment(\.scenePhase) var scenePhase
     
     @StateObject var  familyControlsVM = FamilyControlsVM()
-    @ObservedObject var navVM = NavigateVM.shared
+    @ObservedObject var protectionVM = ProtectionVM.shared
     
     var body: some Scene {
         WindowGroup {
             ///- Note: Main Content
             ContentView()
-            ///- Note: Sheet that will display when redirecting from Shield
-                .sheet(isPresented: $navVM.openSheet, content: {
-//                    ProtectedView(token: navVM.token)
-                    Text(navVM.app?.appName ?? "No App Found")
+            ///- Note: FullscreenCover that will display when redirecting from Protected App
+                .fullScreenCover(isPresented: $protectionVM.openProtectionScreen, content: {
+                    Text(protectionVM.app?.appName ?? "No App Found")
                 })
                 .environmentObject(familyControlsVM)
         }
@@ -45,42 +44,42 @@ struct EvilEyeApp: App {
     }
 }
 
-class AppDelegate: NSObject,UIApplicationDelegate, UNUserNotificationCenterDelegate{
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // ...
-
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-            // Handle permission granted or not
-        }
-        center.delegate = self
-
-        return true
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                didReceive response: UNNotificationResponse,
-                                withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        if let userInfo = response.notification.request.content.userInfo as? [String: AnyObject],
-           let urlStr = userInfo["url"] as? String,
-           let url = URL(string: urlStr),
-           url.scheme == "evileye" {
-            
-            if let token = url.queryItems?.first(where: { $0.name == "token" })?.value {
-                print("TOKEN: From Shield: \(token)")
-                NotificationCenter.default.post(name: NSNotification.Name("OpenSheet"), object: nil, userInfo: ["token": token])
-            }
-        }
-        
-        completionHandler()
-    }
-}
-
-extension URL {
-    var queryItems: [URLQueryItem]? {
-        return URLComponents(string: self.absoluteString)?.queryItems
-    }
-}
+//class AppDelegate: NSObject,UIApplicationDelegate, UNUserNotificationCenterDelegate{
+//
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        // ...
+//
+//        let center = UNUserNotificationCenter.current()
+//        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+//            // Handle permission granted or not
+//        }
+//        center.delegate = self
+//
+//        return true
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter,
+//                                didReceive response: UNNotificationResponse,
+//                                withCompletionHandler completionHandler: @escaping () -> Void) {
+//
+//        if let userInfo = response.notification.request.content.userInfo as? [String: AnyObject],
+//           let urlStr = userInfo["url"] as? String,
+//           let url = URL(string: urlStr),
+//           url.scheme == "evileye" {
+//
+//            if let token = url.queryItems?.first(where: { $0.name == "token" })?.value {
+//                print("TOKEN: From Shield: \(token)")
+//                NotificationCenter.default.post(name: NSNotification.Name("OpenSheet"), object: nil, userInfo: ["token": token])
+//            }
+//        }
+//
+//        completionHandler()
+//    }
+//}
+//
+//extension URL {
+//    var queryItems: [URLQueryItem]? {
+//        return URLComponents(string: self.absoluteString)?.queryItems
+//    }
+//}
 
