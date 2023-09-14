@@ -26,7 +26,8 @@ struct EvilEyeApp: App {
             ContentView()
             ///- Note: Sheet that will display when redirecting from Shield
                 .sheet(isPresented: $navVM.openSheet, content: {
-                    ProtectedView(token: navVM.token)
+//                    ProtectedView(token: navVM.token)
+                    Text(navVM.app?.appName ?? "No App Found")
                 })
                 .environmentObject(familyControlsVM)
         }

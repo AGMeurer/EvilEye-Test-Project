@@ -673,7 +673,7 @@
 		99F611B32A8CD919007719E8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				99F611F62A8CE89B007719E8 /* Navigation */,
+				99F611F62A8CE89B007719E8 /* Protection */,
 				990F3F0E2AB2082E003D704A /* ScreenTime */,
 			);
 			path = ViewModels;
@@ -765,12 +765,12 @@
 			path = "Device Activiy";
 			sourceTree = "<group>";
 		};
-		99F611F62A8CE89B007719E8 /* Navigation */ = {
+		99F611F62A8CE89B007719E8 /* Protection */ = {
 			isa = PBXGroup;
 			children = (
 				9908F8902AA4D33C00F02163 /* NavigateVM.swift */,
 			);
-			path = Navigation;
+			path = Protection;
 			sourceTree = "<group>";
 		};
 		99F611F92A8CE8D7007719E8 /* Profile */ = {
