@@ -26,7 +26,7 @@ struct EvilEyeApp: App {
             ContentView()
             ///- Note: FullscreenCover that will display when redirecting from Protected App
                 .fullScreenCover(isPresented: $protectionVM.openProtectionScreen, content: {
-                    AppProtectionView(appToProtect: protectionVM.app)
+                    AppProtectionView(appToProtect: protectionVM.protectedApp)
                 })
                 .environmentObject(familyControlsVM)
         }

@@ -18,6 +18,7 @@
 		990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F132AB2096E003D704A /* AppToProtect.swift */; };
 		990F3F182AB212D5003D704A /* ProtectedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F172AB212D5003D704A /* ProtectedApp.swift */; };
 		990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F1A2AB37365003D704A /* AppProtectionView.swift */; };
+		990F3F1E2AB3AB26003D704A /* ProtectedAppsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F1D2AB3AB26003D704A /* ProtectedAppsListView.swift */; };
 		993D02702AA9C5E1002F2F36 /* ProtectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */; };
 		993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D02742AA9C64B002F2F36 /* ProtectedVM.swift */; };
 		994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552A02A8CD8AB00F55F58 /* EvilEyeApp.swift */; };
@@ -214,6 +215,7 @@
 		990F3F132AB2096E003D704A /* AppToProtect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToProtect.swift; sourceTree = "<group>"; };
 		990F3F172AB212D5003D704A /* ProtectedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedApp.swift; sourceTree = "<group>"; };
 		990F3F1A2AB37365003D704A /* AppProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtectionView.swift; sourceTree = "<group>"; };
+		990F3F1D2AB3AB26003D704A /* ProtectedAppsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedAppsListView.swift; sourceTree = "<group>"; };
 		993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedView.swift; sourceTree = "<group>"; };
 		993D02742AA9C64B002F2F36 /* ProtectedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedVM.swift; sourceTree = "<group>"; };
 		9945529D2A8CD8AB00F55F58 /* EvilEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -452,6 +454,14 @@
 			path = "Old ScreenTime Stuff";
 			sourceTree = "<group>";
 		};
+		990F3F1C2AB3AB0D003D704A /* Protected Apps */ = {
+			isa = PBXGroup;
+			children = (
+				990F3F1D2AB3AB26003D704A /* ProtectedAppsListView.swift */,
+			);
+			path = "Protected Apps";
+			sourceTree = "<group>";
+		};
 		993D02712AA9C602002F2F36 /* Protected */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +677,7 @@
 			children = (
 				99F611EA2A8CDE21007719E8 /* Authentication */,
 				99F611E92A8CDE19007719E8 /* TabsView */,
+				990F3F1C2AB3AB0D003D704A /* Protected Apps */,
 				9908F8942AA516A000F02163 /* ProtectedSheet */,
 				99F611F92A8CE8D7007719E8 /* Profile */,
 			);
@@ -1164,6 +1175,7 @@
 				9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */,
 				997DFB6B2A95096800774552 /* DeviceActivityService.swift in Sources */,
 				993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */,
+				990F3F1E2AB3AB26003D704A /* ProtectedAppsListView.swift in Sources */,
 				990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */,
 				990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */,
 				998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */,
