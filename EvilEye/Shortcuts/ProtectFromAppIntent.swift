@@ -33,7 +33,7 @@ struct ProtectFromAppIntent: AppIntent {
     func perform() async throws -> some IntentResult {
         do {
             print("APP ID: \(app.id)")
-            NavigateVM.shared.handleIntent(app: app)
+            ProtectionVM.shared.handleIntent(app: app)
             
             return .result()
         } catch {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabsView: View {
     
-    @StateObject var navVM = NavigateVM()
+    @StateObject var navVM = ProtectionVM()
     @StateObject var appsSelectionVM = AppsSelectionVM()
     
     var body: some View {
