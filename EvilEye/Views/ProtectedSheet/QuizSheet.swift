@@ -16,7 +16,7 @@ enum QuizResult {
 struct ProtectedSheet: View {
     
 //    @Binding var openingAttempts: Int
-    let app: ShortcutsAppEntity
+    let app: AppToProtect
     
     @State private var result: QuizResult = .notDetermined
     
@@ -207,6 +207,7 @@ struct ProtectedSheet: View {
 
 struct ProtectedSheet_Previews: PreviewProvider {
     static var previews: some View {
-        ProtectedSheet(app: ShortcutsAppEntity(id: UUID(), appName: "Instagram", appIconData: nil))
+        ProtectedSheet(app:
+                        AppToProtect(id: "", appName: "Insta", appIcon: nil))
     }
 }
