@@ -26,13 +26,15 @@ struct EvilEyeApp: App {
             ContentView()
             ///- Note: FullscreenCover that will display when redirecting from Protected App
                 .fullScreenCover(isPresented: $protectionVM.openProtectionScreen, content: {
-                    Text(protectionVM.app?.appName ?? "No App Found")
+                    AppProtectionView(appToProtect: protectionVM.app)
                 })
                 .environmentObject(familyControlsVM)
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .inactive {
                 print("Scene Phase: Inactive")
+                protectionVM.openProtectionScreen = false
+                
             } else if newPhase == .active {
                 
                 Task { await familyControlsVM.requestFamilyControlAuthorization(initial: true) }

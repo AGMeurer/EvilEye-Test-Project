@@ -11,12 +11,13 @@
 		9908F8872AA4C82300F02163 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8862AA4C82300F02163 /* ApplicationManager.swift */; };
 		9908F88A2AA4C94000F02163 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8892AA4C94000F02163 /* AppEntity.swift */; };
 		9908F88E2AA4CFF300F02163 /* OpenAppFromApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F88D2AA4CFF300F02163 /* OpenAppFromApp.swift */; };
-		9908F8912AA4D33C00F02163 /* NavigateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8902AA4D33C00F02163 /* NavigateVM.swift */; };
+		9908F8912AA4D33C00F02163 /* ProtectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8902AA4D33C00F02163 /* ProtectionVM.swift */; };
 		9908F8962AA516B200F02163 /* QuizSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8952AA516B200F02163 /* QuizSheet.swift */; };
 		9908F8982AA5185F00F02163 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8972AA5185F00F02163 /* Quiz.swift */; };
 		990F3F112AB2087A003D704A /* ProtectFromAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F102AB2087A003D704A /* ProtectFromAppIntent.swift */; };
 		990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F132AB2096E003D704A /* AppToProtect.swift */; };
 		990F3F182AB212D5003D704A /* ProtectedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F172AB212D5003D704A /* ProtectedApp.swift */; };
+		990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F1A2AB37365003D704A /* AppProtectionView.swift */; };
 		993D02702AA9C5E1002F2F36 /* ProtectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */; };
 		993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D02742AA9C64B002F2F36 /* ProtectedVM.swift */; };
 		994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552A02A8CD8AB00F55F58 /* EvilEyeApp.swift */; };
@@ -206,12 +207,13 @@
 		9908F8862AA4C82300F02163 /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		9908F8892AA4C94000F02163 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		9908F88D2AA4CFF300F02163 /* OpenAppFromApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppFromApp.swift; sourceTree = "<group>"; };
-		9908F8902AA4D33C00F02163 /* NavigateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateVM.swift; sourceTree = "<group>"; };
+		9908F8902AA4D33C00F02163 /* ProtectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectionVM.swift; sourceTree = "<group>"; };
 		9908F8952AA516B200F02163 /* QuizSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSheet.swift; sourceTree = "<group>"; };
 		9908F8972AA5185F00F02163 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		990F3F102AB2087A003D704A /* ProtectFromAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectFromAppIntent.swift; sourceTree = "<group>"; };
 		990F3F132AB2096E003D704A /* AppToProtect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToProtect.swift; sourceTree = "<group>"; };
 		990F3F172AB212D5003D704A /* ProtectedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedApp.swift; sourceTree = "<group>"; };
+		990F3F1A2AB37365003D704A /* AppProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtectionView.swift; sourceTree = "<group>"; };
 		993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedView.swift; sourceTree = "<group>"; };
 		993D02742AA9C64B002F2F36 /* ProtectedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedVM.swift; sourceTree = "<group>"; };
 		9945529D2A8CD8AB00F55F58 /* EvilEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -399,6 +401,7 @@
 			children = (
 				9908F8952AA516B200F02163 /* QuizSheet.swift */,
 				993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */,
+				990F3F1A2AB37365003D704A /* AppProtectionView.swift */,
 			);
 			path = ProtectedSheet;
 			sourceTree = "<group>";
@@ -443,6 +446,8 @@
 		990F3F192AB2132D003D704A /* Old ScreenTime Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				99F611EB2A8CDE30007719E8 /* Schedule */,
+				99C340CF2A8F5FA3009849D0 /* Monitor */,
 			);
 			path = "Old ScreenTime Stuff";
 			sourceTree = "<group>";
@@ -664,8 +669,6 @@
 				99F611E92A8CDE19007719E8 /* TabsView */,
 				9908F8942AA516A000F02163 /* ProtectedSheet */,
 				99F611F92A8CE8D7007719E8 /* Profile */,
-				99F611EB2A8CDE30007719E8 /* Schedule */,
-				99C340CF2A8F5FA3009849D0 /* Monitor */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -768,7 +771,7 @@
 		99F611F62A8CE89B007719E8 /* Protection */ = {
 			isa = PBXGroup;
 			children = (
-				9908F8902AA4D33C00F02163 /* NavigateVM.swift */,
+				9908F8902AA4D33C00F02163 /* ProtectionVM.swift */,
 			);
 			path = Protection;
 			sourceTree = "<group>";
@@ -1147,7 +1150,7 @@
 				998FDED12A8CFED10051EDB7 /* Constants.swift in Sources */,
 				99C340BA2A8E26FE009849D0 /* ActivityEvent.swift in Sources */,
 				994552A32A8CD8AB00F55F58 /* ContentView.swift in Sources */,
-				9908F8912AA4D33C00F02163 /* NavigateVM.swift in Sources */,
+				9908F8912AA4D33C00F02163 /* ProtectionVM.swift in Sources */,
 				998FDEC72A8CF25D0051EDB7 /* TextModifier.swift in Sources */,
 				994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */,
 				99F611FD2A8CEEC5007719E8 /* NotApprovedView.swift in Sources */,
@@ -1161,6 +1164,7 @@
 				9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */,
 				997DFB6B2A95096800774552 /* DeviceActivityService.swift in Sources */,
 				993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */,
+				990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */,
 				990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */,
 				998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */,
 				99F611EF2A8CDE4E007719E8 /* OverviewView.swift in Sources */,
