@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct TabsView: View {
+
+    @EnvironmentObject var protectionVM: ProtectionVM
     
-    @StateObject var navVM = ProtectionVM()
     @StateObject var appsSelectionVM = AppsSelectionVM()
+    @State private var selectedTab: Int = 0
     
     var body: some View {
-        TabView(selection: $navVM.selectedTab) {
+        TabView(selection: $selectedTab) {
             
-            OverviewView()
+           ProtectedAppsListView()
+//                .environmentObject(protectionVM)
                 .environmentObject(appsSelectionVM)
-                .environmentObject(navVM)
                 .tabItem {
                     VStack {
                         Image(systemName: "square.fill.text.grid.1x2")
@@ -26,16 +28,15 @@ struct TabsView: View {
                 }
                 .tag(0) // Tag for the first tab
             
-            MonitoringView()
-                .environmentObject(navVM)
-                .environmentObject(appsSelectionVM)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person.fill")
-                        Text("Profile")
-                    }
-                }
-                .tag(1) // Tag for the second tab
+//            MonitoringView()
+//                .environmentObject(appsSelectionVM)
+//                .tabItem {
+//                    VStack {
+//                        Image(systemName: "person.fill")
+//                        Text("Profile")
+//                    }
+//                }
+//                .tag(1) // Tag for the second tab
         }
     }
 }
@@ -43,5 +44,6 @@ struct TabsView: View {
 struct TabsView_Previews: PreviewProvider {
     static var previews: some View {
         TabsView()
+            .environmentObject(ProtectionVM())
     }
 }

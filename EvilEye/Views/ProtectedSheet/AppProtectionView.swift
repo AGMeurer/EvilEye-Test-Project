@@ -11,7 +11,7 @@ struct AppProtectionView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    let appToProtect: AppToProtect?
+    let appToProtect: ProtectedApp?
     
     ///- Note: Timer Properties
     @State private var timerValue: Double = 5
@@ -57,7 +57,7 @@ struct AppProtectionView: View {
     
     ///- Note: Main Content
     @ViewBuilder
-    func MainContent(app: AppToProtect)-> some View {
+    func MainContent(app: ProtectedApp)-> some View {
         VStack(spacing: 30) {
             Text(app.appName)
                 .font(.system(.largeTitle, weight: .bold))
@@ -65,7 +65,7 @@ struct AppProtectionView: View {
     }
     
     @ViewBuilder
-    func BottomContent(app: AppToProtect)-> some View {
+    func BottomContent(app: ProtectedApp)-> some View {
         if !isTimerCompleted {
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(.blue.gradient)
@@ -113,6 +113,6 @@ struct AppProtectionView: View {
 
 struct AppProtectionView_Previews: PreviewProvider {
     static var previews: some View {
-        AppProtectionView(appToProtect: AppToProtect(id: "", appName: "Instagram", appIcon: nil))
+        AppProtectionView(appToProtect: ProtectedApp(id: "", appName: "Instagram", appIcon: ""))
     }
 }

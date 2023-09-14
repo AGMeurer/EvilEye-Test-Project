@@ -14,7 +14,7 @@ import DeviceActivity
 let APP_GROUP_NAME = Bundle.main.APP_GROUP_NAME
 
 class AppsConfigVM: ObservableObject {
-    
+     
     @Published var loadedAppConfigs: [AppConfig] = []
     
     @Published var isAddingAppGroup: Bool = false

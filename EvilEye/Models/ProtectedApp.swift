@@ -10,7 +10,7 @@ import SwiftUI
 
 ///- Note: All Apps that are being Protected
 struct ProtectedApp: Identifiable, Codable {
-    var id: UUID
+    var id: String
     //- Basic Metadata
     var appName: String
     var appIcon: String?
