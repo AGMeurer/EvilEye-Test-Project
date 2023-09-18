@@ -11,7 +11,7 @@ import AppIntents
 struct ProtectFromAppIntent: AppIntent {
     
     ///- Note: Metadata
-    static var title: LocalizedStringResource = "Protect from application 🧿"
+    static var title: LocalizedStringResource = "Protect from Test"
     static var description = IntentDescription("Protect yourself from the selected application", categoryName: "Protection")
     
     ///- Note: Opens Evil Eye Application upon action trigger
