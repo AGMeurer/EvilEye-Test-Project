@@ -13,7 +13,7 @@ import UIKit
 ///- Note: This is the minimal implementation of Protected App. ProtectedApp isn't a Siri custom type, its actually just a normal Swift model with some protocol conformances! To make a model capable of being used like this in an intent, we just conform to AppEntity.
 struct AppToProtect: Identifiable, AppEntity {
     
-    static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "App you want to protect ⚠️🧿⚠️")
+    static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "App you want to protect")
     
     ///- Note: Determines which query will be used
     static var defaultQuery: Query = Query()
