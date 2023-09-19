@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FamilyControls
-import FirebaseCore
 
 @main
 struct EvilEyeApp: App {
@@ -42,7 +41,6 @@ struct EvilEyeApp: App {
                 print("Scene Phase: Background")
             }
         }
-        
     }
 }
 

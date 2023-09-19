@@ -7,11 +7,17 @@
 
 import AppIntents
 
+struct ProtectFromAppShortcut: AppShortcutsProvider {
+    @AppShortcutsBuilder static var appShortcuts: [AppShortcut] {
+        AppShortcut(intent: ProtectFromAppIntent(), phrases: ["Protect from application with \(.applicationName)"], shortTitle: "Protect", systemImageName: "eye.trianglebadge.exclamationmark.fill")
+    }
+}
+
 ///- Note: Intent to go back from protected Application
 struct ProtectFromAppIntent: AppIntent {
     
     ///- Note: Metadata
-    static var title: LocalizedStringResource = "Protect from Test"
+    static var title: LocalizedStringResource = "Protect from App"
     static var description = IntentDescription("Protect yourself from the selected application", categoryName: "Protection")
     
     ///- Note: Opens Evil Eye Application upon action trigger
@@ -25,7 +31,7 @@ struct ProtectFromAppIntent: AppIntent {
     }
 
     ///- Note: Parameter for the App to Protect
-    @Parameter(title: "App you want to protect ⚠️🧿⚠️", description: "The application you want to protect", requestValueDialog: IntentDialog("Which application would you like to choose?"))
+    @Parameter(title: "App you want to protect", description: "The application you want to protect", requestValueDialog: IntentDialog("Which application would you like to choose?"))
     var app: AppToProtect
     
     ///- Note: Runs code when the Intent is triggered
