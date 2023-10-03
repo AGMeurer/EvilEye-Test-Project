@@ -6,12 +6,14 @@
 //
 
 import AppIntents
+import UIKit
+import SwiftUI
 
-struct ProtectFromAppShortcut: AppShortcutsProvider {
-    @AppShortcutsBuilder static var appShortcuts: [AppShortcut] {
-        AppShortcut(intent: ProtectFromAppIntent(), phrases: ["Protect from application with \(.applicationName)"], shortTitle: "Protect", systemImageName: "eye.trianglebadge.exclamationmark.fill")
-    }
-}
+//struct ProtectFromAppShortcut: AppShortcutsProvider {
+//    @AppShortcutsBuilder static var appShortcuts: [AppShortcut] {
+//        AppShortcut(intent: ProtectFromAppIntent(), phrases: ["Protect from application with \(.applicationName)"], shortTitle: "Protect", systemImageName: "eye.trianglebadge.exclamationmark.fill")
+//    }
+//}
 
 ///- Note: Intent to go back from protected Application
 struct ProtectFromAppIntent: AppIntent {
@@ -20,8 +22,11 @@ struct ProtectFromAppIntent: AppIntent {
     static var title: LocalizedStringResource = "Protect from App"
     static var description = IntentDescription("Protect yourself from the selected application", categoryName: "Protection")
     
-    ///- Note: Opens Evil Eye Application upon action trigger
-    static var openAppWhenRun: Bool = true
+    static var int: Int = 0
+    
+    static var openAppWhenRun: Bool {
+        return int == 0 ? true : false
+    }
     
     ///- Note: String displayed in Intent Shortcuts App
     static var parameterSummary: some ParameterSummary {
@@ -29,23 +34,36 @@ struct ProtectFromAppIntent: AppIntent {
             \.$app
         }
     }
-
+    
     ///- Note: Parameter for the App to Protect
     @Parameter(title: "App you want to protect", description: "The application you want to protect", requestValueDialog: IntentDialog("Which application would you like to choose?"))
     var app: AppToProtect
     
     ///- Note: Runs code when the Intent is triggered
     @MainActor // 👈🏻 ensure it's executed in the main thread
-    func perform() async throws -> some IntentResult {
+    func perform() async throws -> some IntentResult & OpensIntent {
         do {
-            print("APP ID: \(app.id)")
+            
             await ProtectionVM.shared.handleIntent(app: app)
             
-            return .result()
+            return .result(opensIntent: NextAppIntent())
+            
         } catch {
-            throw error
+            print(error.localizedDescription)
         }
     }
+}
+
+//@available(iOS 16.0, *)
+struct NextAppIntent: AppIntent {
+    
+  static var title: LocalizedStringResource = "Next App Intent"
+
+  @MainActor
+  func perform(
+  ) async throws -> some IntentResult {
+      return .result()
+  }
 }
 
 //  private struct AppOptionsProvider: DynamicOptionsProvider {

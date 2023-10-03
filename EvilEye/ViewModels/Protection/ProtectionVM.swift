@@ -11,7 +11,7 @@ import SwiftUI
 class ProtectionVM: ObservableObject {
     
     static var shared = ProtectionVM()
-
+    
     ///- Note: This Bool opens the Protection FullScreenCover
     @Published var openProtectionScreen: Bool = false
     ///- Note: A list of all the applications the user protects
@@ -19,7 +19,7 @@ class ProtectionVM: ObservableObject {
     ///- Note: This property saves the Protected App associated with the app coming from the Intent
     @Published var protectedApp: ProtectedApp?
     ///- Note: Indicates that user added a new app to protect (important for adding new)
-    @Published var addedNewProtectedApp: Bool = false
+    public static var allowToOpen: Bool = true
     ///- Note: User Defaults singleton for Protected Apps
     let defaults = UserDefaults.standard
     
@@ -32,6 +32,11 @@ class ProtectionVM: ObservableObject {
     
     let protectedListError = "Could not load list of protected apps"
     let errorMsg = "Could not load protected App"
+    
+    @objc public static func handleOpeningWhenRun() -> Bool {
+        print(": handles Opening: \(allowToOpen)")
+        return allowToOpen == true ? true : false
+    }
     
     ///- Note: This function determines, what will happen when the Shortcut gets triggered, and the Main Target opens
     func handleIntent(app: AppToProtect) async {
@@ -56,7 +61,7 @@ class ProtectionVM: ObservableObject {
                     self.handleIntentProcess = .success
                     self.openProtectionScreen = true
                 }
-
+                
             } catch {
                 await updateUI{
                     self.handleIntentProcess = .failed(self.errorMsg)
@@ -80,15 +85,15 @@ class ProtectionVM: ObservableObject {
     
     func getProtectedApp(_ app: AppToProtect) async throws {
         if let data = UserDefaults.standard.data(forKey: "Protected_Apps_\(app.id)") {
-                do {
-                    self.protectedApp = try JSONDecoder().decode(ProtectedApp.self, from: data)
-                    print("Got Protected App named: \(String(describing: protectedApp?.appName))")
-                } catch {
-                    print("Failed to decode Protected App: \(error.localizedDescription)")
-                }
+            do {
+                self.protectedApp = try JSONDecoder().decode(ProtectedApp.self, from: data)
+                print("Got Protected App named: \(String(describing: protectedApp?.appName))")
+            } catch {
+                print("Failed to decode Protected App: \(error.localizedDescription)")
             }
+        }
     }
-
+    
     func updateProtectedApp() {
         
     }

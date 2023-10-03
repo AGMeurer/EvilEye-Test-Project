@@ -52,6 +52,9 @@ struct AppProtectionView: View {
         } navbarTrailing: {
             
         }
+//        .onAppear {
+//            ProtectFromAppIntent.openAppWhenRun = false
+//        }
 
     }
     
@@ -77,10 +80,21 @@ struct AppProtectionView: View {
                     dismiss()
                 }, label: {
                     PrimaryButtonLabel(buttonText: "Close", buttonState: .isEligible, isProgressing: false)
-                   
+                    
                 })
                 
-                TextModifier(text: "Go back to \(app.appName)", fontConfig: .textStyle(style: .subheadline, weight: .semibold, design: .rounded), fgColor: .secondary, alignment: .center, lineLimit: 2)
+                
+                Button(action: {
+                    
+//                    ProtectFromAppIntent.openAppWhenRun = false
+                    
+                    if let url = URL(string: "instagram://") {
+                        UIApplication.shared.open(url)
+                    }
+                    
+                }, label: {
+                    TextModifier(text: "Go back to \(app.appName)", fontConfig: .textStyle(style: .subheadline, weight: .semibold, design: .rounded), fgColor: .secondary, alignment: .center, lineLimit: 2)
+                })
             }
            
         }
