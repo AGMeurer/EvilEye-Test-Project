@@ -22,8 +22,6 @@ import UniformTypeIdentifiers
 // Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
 class ShieldActionExtension: ShieldActionDelegate {
    
-    static var openAppWhenRun: Bool = true // Make sure you have this
-    
     let store = ManagedSettingsStore()
     
     func scheduleNotification(token: Int) {

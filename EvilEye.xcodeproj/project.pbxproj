@@ -9,15 +9,11 @@
 /* Begin PBXBuildFile section */
 		9908F88A2AA4C94000F02163 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8892AA4C94000F02163 /* AppEntity.swift */; };
 		9908F8912AA4D33C00F02163 /* ProtectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8902AA4D33C00F02163 /* ProtectionVM.swift */; };
-		9908F8962AA516B200F02163 /* QuizSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8952AA516B200F02163 /* QuizSheet.swift */; };
-		9908F8982AA5185F00F02163 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F8972AA5185F00F02163 /* Quiz.swift */; };
 		990F3F112AB2087A003D704A /* ProtectFromAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F102AB2087A003D704A /* ProtectFromAppIntent.swift */; };
 		990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F132AB2096E003D704A /* AppToProtect.swift */; };
 		990F3F182AB212D5003D704A /* ProtectedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F172AB212D5003D704A /* ProtectedApp.swift */; };
 		990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F1A2AB37365003D704A /* AppProtectionView.swift */; };
 		990F3F1E2AB3AB26003D704A /* ProtectedAppsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F3F1D2AB3AB26003D704A /* ProtectedAppsListView.swift */; };
-		993D02702AA9C5E1002F2F36 /* ProtectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */; };
-		993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993D02742AA9C64B002F2F36 /* ProtectedVM.swift */; };
 		994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552A02A8CD8AB00F55F58 /* EvilEyeApp.swift */; };
 		994552A32A8CD8AB00F55F58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552A22A8CD8AB00F55F58 /* ContentView.swift */; };
 		994552A52A8CD8AC00F55F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994552A42A8CD8AC00F55F58 /* Assets.xcassets */; };
@@ -25,17 +21,9 @@
 		994552B22A8CD8AC00F55F58 /* EvilEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552B12A8CD8AC00F55F58 /* EvilEyeTests.swift */; };
 		994552BC2A8CD8AC00F55F58 /* EvilEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552BB2A8CD8AC00F55F58 /* EvilEyeUITests.swift */; };
 		994552BE2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994552BD2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift */; };
-		9973EFDA2A8F6BA3002BC49E /* ScreenTimeReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */; };
-		9973EFDC2A8F6BA3002BC49E /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */; };
-		9973EFDE2A8F6BA3002BC49E /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */; };
-		9973EFE32A8F6BA3002BC49E /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9973EFE82A8F6BDA002BC49E /* ScreenTimeActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */; };
-		9973EFEB2A8F6EDE002BC49E /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */; };
 		9973EFEF2A8F90F1002BC49E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFEE2A8F90F1002BC49E /* AppConfig.swift */; };
 		9973EFF12A8F94E3002BC49E /* AppConfigVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */; };
 		9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF22A8F97E8002BC49E /* FocusedTextField.swift */; };
-		9973EFF52A8FA728002BC49E /* SetScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF42A8FA728002BC49E /* SetScheduleView.swift */; };
-		9973EFF72A8FAA9C002BC49E /* SetScheduleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */; };
 		9973EFFA2A8FAE99002BC49E /* AppGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973EFF92A8FAE99002BC49E /* AppGroupCell.swift */; };
 		9973F00A2A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */; };
 		9973F0152A8FD6B0002BC49E /* SharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9973F0002A8FD6B0002BC49E /* SharedFramework.framework */; };
@@ -52,7 +40,6 @@
 		998FDECC2A8CF3400051EDB7 /* NavigationSceleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDECB2A8CF3400051EDB7 /* NavigationSceleton.swift */; };
 		998FDECF2A8CF4C40051EDB7 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDECE2A8CF4C40051EDB7 /* Logo.swift */; };
 		998FDED12A8CFED10051EDB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED02A8CFED10051EDB7 /* Constants.swift */; };
-		998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */; };
 		998FDED52A8D3BF10051EDB7 /* AppsConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */; };
 		998FDED92A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */; };
 		998FDEF72A8D78790051EDB7 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FDEF62A8D78790051EDB7 /* ManagedSettings.framework */; };
@@ -63,16 +50,13 @@
 		99C340862A8E0011009849D0 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340852A8E0011009849D0 /* DeviceActivityMonitorExtension.swift */; };
 		99C3408B2A8E0011009849D0 /* DeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99C340822A8E0011009849D0 /* DeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99C340B82A8E1BA0009849D0 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340B72A8E1BA0009849D0 /* Bundle+Extension.swift */; };
-		99C340BA2A8E26FE009849D0 /* ActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340B92A8E26FE009849D0 /* ActivityEvent.swift */; };
 		99C340C02A8E86D5009849D0 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FDEF62A8D78790051EDB7 /* ManagedSettings.framework */; };
 		99C340C32A8E86D5009849D0 /* ShieldActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340C22A8E86D5009849D0 /* ShieldActionExtension.swift */; };
 		99C340C82A8E86D5009849D0 /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99C340BF2A8E86D5009849D0 /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99C340CE2A8F5BED009849D0 /* DatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C340CD2A8F5BED009849D0 /* DatesHelper.swift */; };
-		99F611E82A8CDAE2007719E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99F611E72A8CDAE2007719E8 /* GoogleService-Info.plist */; };
 		99F611ED2A8CDE46007719E8 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F611EC2A8CDE46007719E8 /* TabsView.swift */; };
 		99F611EF2A8CDE4E007719E8 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F611EE2A8CDE4E007719E8 /* OverviewView.swift */; };
 		99F611F52A8CE393007719E8 /* FamilyControlsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F611F42A8CE393007719E8 /* FamilyControlsVM.swift */; };
-		99F611FB2A8CE8DF007719E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F611FA2A8CE8DF007719E8 /* ProfileView.swift */; };
 		99F611FD2A8CEEC5007719E8 /* NotApprovedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F611FC2A8CEEC5007719E8 /* NotApprovedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,13 +74,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9945529C2A8CD8AB00F55F58;
 			remoteInfo = EvilEye;
-		};
-		9973EFE12A8F6BA3002BC49E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 994552952A8CD8AB00F55F58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9973EFD62A8F6BA3002BC49E;
-			remoteInfo = ScreenTimeReport;
 		};
 		9973F00B2A8FD6B0002BC49E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -173,7 +150,6 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				9973EFE32A8F6BA3002BC49E /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,15 +159,11 @@
 /* Begin PBXFileReference section */
 		9908F8892AA4C94000F02163 /* AppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		9908F8902AA4D33C00F02163 /* ProtectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectionVM.swift; sourceTree = "<group>"; };
-		9908F8952AA516B200F02163 /* QuizSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSheet.swift; sourceTree = "<group>"; };
-		9908F8972AA5185F00F02163 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		990F3F102AB2087A003D704A /* ProtectFromAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectFromAppIntent.swift; sourceTree = "<group>"; };
 		990F3F132AB2096E003D704A /* AppToProtect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToProtect.swift; sourceTree = "<group>"; };
 		990F3F172AB212D5003D704A /* ProtectedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedApp.swift; sourceTree = "<group>"; };
 		990F3F1A2AB37365003D704A /* AppProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtectionView.swift; sourceTree = "<group>"; };
 		990F3F1D2AB3AB26003D704A /* ProtectedAppsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedAppsListView.swift; sourceTree = "<group>"; };
-		993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedView.swift; sourceTree = "<group>"; };
-		993D02742AA9C64B002F2F36 /* ProtectedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedVM.swift; sourceTree = "<group>"; };
 		9945529D2A8CD8AB00F55F58 /* EvilEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		994552A02A8CD8AB00F55F58 /* EvilEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilEyeApp.swift; sourceTree = "<group>"; };
 		994552A22A8CD8AB00F55F58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -202,19 +174,9 @@
 		994552B72A8CD8AC00F55F58 /* EvilEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvilEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994552BB2A8CD8AC00F55F58 /* EvilEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilEyeUITests.swift; sourceTree = "<group>"; };
 		994552BD2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilEyeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeReport.swift; sourceTree = "<group>"; };
-		9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
-		9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
-		9973EFDF2A8F6BA3002BC49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9973EFE02A8F6BA3002BC49E /* ScreenTimeReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeReport.entitlements; sourceTree = "<group>"; };
-		9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeActivityReport.swift; sourceTree = "<group>"; };
-		9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
 		9973EFEE2A8F90F1002BC49E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigVM.swift; sourceTree = "<group>"; };
 		9973EFF22A8F97E8002BC49E /* FocusedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedTextField.swift; sourceTree = "<group>"; };
-		9973EFF42A8FA728002BC49E /* SetScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleView.swift; sourceTree = "<group>"; };
-		9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleVM.swift; sourceTree = "<group>"; };
 		9973EFF92A8FAE99002BC49E /* AppGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupCell.swift; sourceTree = "<group>"; };
 		9973F0002A8FD6B0002BC49E /* SharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9973F0092A8FD6B0002BC49E /* SharedFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,7 +192,6 @@
 		998FDECB2A8CF3400051EDB7 /* NavigationSceleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSceleton.swift; sourceTree = "<group>"; };
 		998FDECE2A8CF4C40051EDB7 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		998FDED02A8CFED10051EDB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSelectionVM.swift; sourceTree = "<group>"; };
 		998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsConfigView.swift; sourceTree = "<group>"; };
 		998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityScheduleVM.swift; sourceTree = "<group>"; };
 		998FDEDD2A8D70F70051EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -246,18 +207,15 @@
 		99C340872A8E0011009849D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C340882A8E0011009849D0 /* DeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
 		99C340B72A8E1BA0009849D0 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		99C340B92A8E26FE009849D0 /* ActivityEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEvent.swift; sourceTree = "<group>"; };
 		99C340BF2A8E86D5009849D0 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C340C22A8E86D5009849D0 /* ShieldActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldActionExtension.swift; sourceTree = "<group>"; };
 		99C340C42A8E86D5009849D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C340C52A8E86D5009849D0 /* ShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldAction.entitlements; sourceTree = "<group>"; };
 		99C340CD2A8F5BED009849D0 /* DatesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesHelper.swift; sourceTree = "<group>"; };
-		99F611E72A8CDAE2007719E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99F611EC2A8CDE46007719E8 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		99F611EE2A8CDE4E007719E8 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		99F611F12A8CE2B5007719E8 /* EvilEye.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EvilEye.entitlements; sourceTree = "<group>"; };
 		99F611F42A8CE393007719E8 /* FamilyControlsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsVM.swift; sourceTree = "<group>"; };
-		99F611FA2A8CE8DF007719E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		99F611FC2A8CEEC5007719E8 /* NotApprovedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotApprovedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,13 +236,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		994552B42A8CD8AC00F55F58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9973EFD42A8F6BA3002BC49E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,8 +288,6 @@
 		9908F8942AA516A000F02163 /* ProtectedSheet */ = {
 			isa = PBXGroup;
 			children = (
-				9908F8952AA516B200F02163 /* QuizSheet.swift */,
-				993D026F2AA9C5E1002F2F36 /* ProtectedView.swift */,
 				990F3F1A2AB37365003D704A /* AppProtectionView.swift */,
 			);
 			path = ProtectedSheet;
@@ -347,10 +296,8 @@
 		990F3F0E2AB2082E003D704A /* ScreenTime */ = {
 			isa = PBXGroup;
 			children = (
-				993D02712AA9C602002F2F36 /* Protected */,
 				99F611F02A8CDE5E007719E8 /* Family Controls */,
 				99F611F32A8CE358007719E8 /* Device Activiy */,
-				99F611F22A8CE34F007719E8 /* Managed Settings */,
 			);
 			path = ScreenTime;
 			sourceTree = "<group>";
@@ -366,28 +313,10 @@
 		990F3F152AB212BB003D704A /* ScreenTime Models */ = {
 			isa = PBXGroup;
 			children = (
-				99C340B92A8E26FE009849D0 /* ActivityEvent.swift */,
 				9973EFEE2A8F90F1002BC49E /* AppConfig.swift */,
 				9908F8892AA4C94000F02163 /* AppEntity.swift */,
 			);
 			path = "ScreenTime Models";
-			sourceTree = "<group>";
-		};
-		990F3F162AB212CC003D704A /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				9908F8972AA5185F00F02163 /* Quiz.swift */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		990F3F192AB2132D003D704A /* Old ScreenTime Stuff */ = {
-			isa = PBXGroup;
-			children = (
-				99F611EB2A8CDE30007719E8 /* Schedule */,
-				99C340CF2A8F5FA3009849D0 /* Monitor */,
-			);
-			path = "Old ScreenTime Stuff";
 			sourceTree = "<group>";
 		};
 		990F3F1C2AB3AB0D003D704A /* Protected Apps */ = {
@@ -398,26 +327,16 @@
 			path = "Protected Apps";
 			sourceTree = "<group>";
 		};
-		993D02712AA9C602002F2F36 /* Protected */ = {
-			isa = PBXGroup;
-			children = (
-				993D02742AA9C64B002F2F36 /* ProtectedVM.swift */,
-			);
-			path = Protected;
-			sourceTree = "<group>";
-		};
 		994552942A8CD8AB00F55F58 = {
 			isa = PBXGroup;
 			children = (
 				9945529F2A8CD8AB00F55F58 /* EvilEye */,
-				990F3F192AB2132D003D704A /* Old ScreenTime Stuff */,
 				990F3F152AB212BB003D704A /* ScreenTime Models */,
-				9973EFD82A8F6BA3002BC49E /* ScreenTimeReport */,
-				994552BA2A8CD8AC00F55F58 /* EvilEyeUITests */,
-				994552B02A8CD8AC00F55F58 /* EvilEyeTests */,
 				99C340842A8E0011009849D0 /* DeviceActivityMonitor */,
 				998FDEFA2A8D78790051EDB7 /* Shield Configuration */,
 				99C340C12A8E86D5009849D0 /* ShieldAction */,
+				994552BA2A8CD8AC00F55F58 /* EvilEyeUITests */,
+				994552B02A8CD8AC00F55F58 /* EvilEyeTests */,
 				998FDEF52A8D78790051EDB7 /* Frameworks */,
 				9945529E2A8CD8AB00F55F58 /* Products */,
 			);
@@ -432,7 +351,6 @@
 				998FDEF42A8D78790051EDB7 /* Shield Configuration.appex */,
 				99C340822A8E0011009849D0 /* DeviceActivityMonitor.appex */,
 				99C340BF2A8E86D5009849D0 /* ShieldAction.appex */,
-				9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */,
 				9973F0002A8FD6B0002BC49E /* SharedFramework.framework */,
 				9973F0092A8FD6B0002BC49E /* SharedFrameworkTests.xctest */,
 			);
@@ -452,7 +370,6 @@
 				990F3F0F2AB20846003D704A /* Shortcuts */,
 				99F611B52A8CD923007719E8 /* Utils */,
 				994552A42A8CD8AC00F55F58 /* Assets.xcassets */,
-				99F611E72A8CDAE2007719E8 /* GoogleService-Info.plist */,
 				994552A62A8CD8AC00F55F58 /* Preview Content */,
 			);
 			path = EvilEye;
@@ -481,19 +398,6 @@
 				994552BD2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift */,
 			);
 			path = EvilEyeUITests;
-			sourceTree = "<group>";
-		};
-		9973EFD82A8F6BA3002BC49E /* ScreenTimeReport */ = {
-			isa = PBXGroup;
-			children = (
-				9973EFD92A8F6BA3002BC49E /* ScreenTimeReport.swift */,
-				9973EFDB2A8F6BA3002BC49E /* TotalActivityReport.swift */,
-				9973EFDD2A8F6BA3002BC49E /* TotalActivityView.swift */,
-				9973EFDF2A8F6BA3002BC49E /* Info.plist */,
-				9973EFE02A8F6BA3002BC49E /* ScreenTimeReport.entitlements */,
-				9973EFE72A8F6BDA002BC49E /* ScreenTimeActivityReport.swift */,
-			);
-			path = ScreenTimeReport;
 			sourceTree = "<group>";
 		};
 		9973EFF82A8FAE8F002BC49E /* AppGroup */ = {
@@ -599,12 +503,22 @@
 			path = Dates;
 			sourceTree = "<group>";
 		};
-		99C340CF2A8F5FA3009849D0 /* Monitor */ = {
+		99DCC91C2AEA387A00C64211 /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
-				9973EFEA2A8F6EDE002BC49E /* MonitoringView.swift */,
+				990F3F1C2AB3AB0D003D704A /* Protected Apps */,
+				9908F8942AA516A000F02163 /* ProtectedSheet */,
 			);
-			path = Monitor;
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		99DCC91D2AEA388000C64211 /* ScreenTime */ = {
+			isa = PBXGroup;
+			children = (
+				99F611EE2A8CDE4E007719E8 /* OverviewView.swift */,
+				998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */,
+			);
+			path = ScreenTime;
 			sourceTree = "<group>";
 		};
 		99F611B22A8CD915007719E8 /* Views */ = {
@@ -612,9 +526,8 @@
 			children = (
 				99F611EA2A8CDE21007719E8 /* Authentication */,
 				99F611E92A8CDE19007719E8 /* TabsView */,
-				990F3F1C2AB3AB0D003D704A /* Protected Apps */,
-				9908F8942AA516A000F02163 /* ProtectedSheet */,
-				99F611F92A8CE8D7007719E8 /* Profile */,
+				99DCC91D2AEA388000C64211 /* ScreenTime */,
+				99DCC91C2AEA387A00C64211 /* Shortcuts */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -622,7 +535,7 @@
 		99F611B32A8CD919007719E8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				99F611F62A8CE89B007719E8 /* Protection */,
+				99F611F62A8CE89B007719E8 /* Shortcuts */,
 				990F3F0E2AB2082E003D704A /* ScreenTime */,
 			);
 			path = ViewModels;
@@ -633,7 +546,6 @@
 			children = (
 				990F3F172AB212D5003D704A /* ProtectedApp.swift */,
 				990F3F132AB2096E003D704A /* AppToProtect.swift */,
-				990F3F162AB212CC003D704A /* Other */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -677,57 +589,30 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		99F611EB2A8CDE30007719E8 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				99F611EE2A8CDE4E007719E8 /* OverviewView.swift */,
-				998FDED42A8D3BF10051EDB7 /* AppsConfigView.swift */,
-				9973EFF42A8FA728002BC49E /* SetScheduleView.swift */,
-			);
-			path = Schedule;
-			sourceTree = "<group>";
-		};
 		99F611F02A8CDE5E007719E8 /* Family Controls */ = {
 			isa = PBXGroup;
 			children = (
 				99F611F42A8CE393007719E8 /* FamilyControlsVM.swift */,
 				9973EFF02A8F94E3002BC49E /* AppConfigVM.swift */,
-				998FDED22A8D3B5B0051EDB7 /* AppsSelectionVM.swift */,
 			);
 			path = "Family Controls";
-			sourceTree = "<group>";
-		};
-		99F611F22A8CE34F007719E8 /* Managed Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Managed Settings";
 			sourceTree = "<group>";
 		};
 		99F611F32A8CE358007719E8 /* Device Activiy */ = {
 			isa = PBXGroup;
 			children = (
 				998FDED82A8D5ADE0051EDB7 /* DeviceActivityScheduleVM.swift */,
-				9973EFF62A8FAA9C002BC49E /* SetScheduleVM.swift */,
 				997DFB6A2A95096800774552 /* DeviceActivityService.swift */,
 			);
 			path = "Device Activiy";
 			sourceTree = "<group>";
 		};
-		99F611F62A8CE89B007719E8 /* Protection */ = {
+		99F611F62A8CE89B007719E8 /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
 				9908F8902AA4D33C00F02163 /* ProtectionVM.swift */,
 			);
-			path = Protection;
-			sourceTree = "<group>";
-		};
-		99F611F92A8CE8D7007719E8 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				99F611FA2A8CE8DF007719E8 /* ProfileView.swift */,
-			);
-			path = Profile;
+			path = Shortcuts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -760,7 +645,6 @@
 				998FDF002A8D78790051EDB7 /* PBXTargetDependency */,
 				99C3408A2A8E0011009849D0 /* PBXTargetDependency */,
 				99C340C72A8E86D5009849D0 /* PBXTargetDependency */,
-				9973EFE22A8F6BA3002BC49E /* PBXTargetDependency */,
 				9973F0142A8FD6B0002BC49E /* PBXTargetDependency */,
 			);
 			name = EvilEye;
@@ -805,23 +689,6 @@
 			productName = EvilEyeUITests;
 			productReference = 994552B72A8CD8AC00F55F58 /* EvilEyeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9973EFE42A8F6BA3002BC49E /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */;
-			buildPhases = (
-				9973EFD32A8F6BA3002BC49E /* Sources */,
-				9973EFD42A8F6BA3002BC49E /* Frameworks */,
-				9973EFD52A8F6BA3002BC49E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ScreenTimeReport;
-			productName = ScreenTimeReport;
-			productReference = 9973EFD72A8F6BA3002BC49E /* ScreenTimeReport.appex */;
-			productType = "com.apple.product-type.extensionkit-extension";
 		};
 		9973EFFF2A8FD6AF002BC49E /* SharedFramework */ = {
 			isa = PBXNativeTarget;
@@ -932,9 +799,6 @@
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 9945529C2A8CD8AB00F55F58;
 					};
-					9973EFD62A8F6BA3002BC49E = {
-						CreatedOnToolsVersion = 14.3;
-					};
 					9973EFFF2A8FD6AF002BC49E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -974,7 +838,6 @@
 				998FDEF32A8D78790051EDB7 /* Shield Configuration */,
 				99C340812A8E0011009849D0 /* DeviceActivityMonitor */,
 				99C340BE2A8E86D5009849D0 /* ShieldAction */,
-				9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */,
 				9973EFFF2A8FD6AF002BC49E /* SharedFramework */,
 				9973F0082A8FD6B0002BC49E /* SharedFrameworkTests */,
 			);
@@ -987,7 +850,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				994552A82A8CD8AC00F55F58 /* Preview Assets.xcassets in Resources */,
-				99F611E82A8CDAE2007719E8 /* GoogleService-Info.plist in Resources */,
 				994552A52A8CD8AC00F55F58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1000,13 +862,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		994552B52A8CD8AC00F55F58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9973EFD52A8F6BA3002BC49E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1058,38 +913,28 @@
 				9908F88A2AA4C94000F02163 /* AppEntity.swift in Sources */,
 				998FDECC2A8CF3400051EDB7 /* NavigationSceleton.swift in Sources */,
 				99C340B82A8E1BA0009849D0 /* Bundle+Extension.swift in Sources */,
-				9973EFEB2A8F6EDE002BC49E /* MonitoringView.swift in Sources */,
 				998FDECF2A8CF4C40051EDB7 /* Logo.swift in Sources */,
 				998FDEC92A8CF2650051EDB7 /* TextHelper.swift in Sources */,
-				9908F8982AA5185F00F02163 /* Quiz.swift in Sources */,
 				990F3F112AB2087A003D704A /* ProtectFromAppIntent.swift in Sources */,
 				998FDEC42A8CF2160051EDB7 /* ButtonHelper.swift in Sources */,
 				99F611F52A8CE393007719E8 /* FamilyControlsVM.swift in Sources */,
-				9973EFF52A8FA728002BC49E /* SetScheduleView.swift in Sources */,
-				9973EFF72A8FAA9C002BC49E /* SetScheduleVM.swift in Sources */,
-				993D02702AA9C5E1002F2F36 /* ProtectedView.swift in Sources */,
 				998FDED52A8D3BF10051EDB7 /* AppsConfigView.swift in Sources */,
 				99F611ED2A8CDE46007719E8 /* TabsView.swift in Sources */,
 				998FDED12A8CFED10051EDB7 /* Constants.swift in Sources */,
-				99C340BA2A8E26FE009849D0 /* ActivityEvent.swift in Sources */,
 				994552A32A8CD8AB00F55F58 /* ContentView.swift in Sources */,
 				9908F8912AA4D33C00F02163 /* ProtectionVM.swift in Sources */,
 				998FDEC72A8CF25D0051EDB7 /* TextModifier.swift in Sources */,
 				994552A12A8CD8AB00F55F58 /* EvilEyeApp.swift in Sources */,
 				99F611FD2A8CEEC5007719E8 /* NotApprovedView.swift in Sources */,
-				99F611FB2A8CE8DF007719E8 /* ProfileView.swift in Sources */,
-				9908F8962AA516B200F02163 /* QuizSheet.swift in Sources */,
 				998FDEC22A8CF20B0051EDB7 /* PrimaryButtonLabel.swift in Sources */,
 				997DFB652A94E0A400774552 /* AppIcon.swift in Sources */,
 				997DFB692A94E97D00774552 /* AddAppCell.swift in Sources */,
 				99C340CE2A8F5BED009849D0 /* DatesHelper.swift in Sources */,
 				9973EFF32A8F97E8002BC49E /* FocusedTextField.swift in Sources */,
 				997DFB6B2A95096800774552 /* DeviceActivityService.swift in Sources */,
-				993D02752AA9C64B002F2F36 /* ProtectedVM.swift in Sources */,
 				990F3F1E2AB3AB26003D704A /* ProtectedAppsListView.swift in Sources */,
 				990F3F1B2AB37365003D704A /* AppProtectionView.swift in Sources */,
 				990F3F142AB2096E003D704A /* AppToProtect.swift in Sources */,
-				998FDED32A8D3B5B0051EDB7 /* AppsSelectionVM.swift in Sources */,
 				99F611EF2A8CDE4E007719E8 /* OverviewView.swift in Sources */,
 				990F3F182AB212D5003D704A /* ProtectedApp.swift in Sources */,
 				9973EFFA2A8FAE99002BC49E /* AppGroupCell.swift in Sources */,
@@ -1115,17 +960,6 @@
 			files = (
 				994552BE2A8CD8AC00F55F58 /* EvilEyeUITestsLaunchTests.swift in Sources */,
 				994552BC2A8CD8AC00F55F58 /* EvilEyeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9973EFD32A8F6BA3002BC49E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9973EFDE2A8F6BA3002BC49E /* TotalActivityView.swift in Sources */,
-				9973EFE82A8F6BDA002BC49E /* ScreenTimeActivityReport.swift in Sources */,
-				9973EFDA2A8F6BA3002BC49E /* ScreenTimeReport.swift in Sources */,
-				9973EFDC2A8F6BA3002BC49E /* TotalActivityReport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1179,11 +1013,6 @@
 			isa = PBXTargetDependency;
 			target = 9945529C2A8CD8AB00F55F58 /* EvilEye */;
 			targetProxy = 994552B82A8CD8AC00F55F58 /* PBXContainerItemProxy */;
-		};
-		9973EFE22A8F6BA3002BC49E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9973EFD62A8F6BA3002BC49E /* ScreenTimeReport */;
-			targetProxy = 9973EFE12A8F6BA3002BC49E /* PBXContainerItemProxy */;
 		};
 		9973F00C2A8FD6B0002BC49E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1484,60 +1313,6 @@
 			};
 			name = Release;
 		};
-		9973EFE52A8F6BA3002BC49E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V5L975YGRL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9973EFE62A8F6BA3002BC49E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V5L975YGRL;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EvilEye.EvilEye-IOS.ScreenTimeReport";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		9973F0182A8FD6B0002BC49E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1831,15 +1606,6 @@
 			buildConfigurations = (
 				994552C82A8CD8AC00F55F58 /* Debug */,
 				994552C92A8CD8AC00F55F58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9973EFE42A8F6BA3002BC49E /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9973EFE52A8F6BA3002BC49E /* Debug */,
-				9973EFE62A8F6BA3002BC49E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -45,7 +45,7 @@ struct AppsConfigView: View {
         
         LazyVStack(alignment: .leading, spacing: 10) {
             TextModifier(text: "Add Applications", fontConfig: .textStyle(style: .title3, weight: .semibold, design: .default), fgColor: .primary, alignment: .leading, lineLimit: 2)
-            ForEach(AppConfig.initialAppConfigs, id: \.self) { appConfig in
+            ForEach(AppConfig.initialAppConfigs, id: \.id) { appConfig in
                 
                 if appGroupVM.loadedAppConfigs.contains(where: { $0.appName == appConfig.appName }) {
                     
@@ -69,6 +69,7 @@ struct AppsConfigView: View {
     func ProtectedApps() -> some View {
         LazyVStack(alignment: .leading, spacing: 10) {
             TextModifier(text: "Protected Applications", fontConfig: .textStyle(style: .title3, weight: .semibold, design: .default), fgColor: .primary, alignment: .leading, lineLimit: 2)
+            
             if !appGroupVM.loadedAppConfigs.isEmpty {
                 ForEach(appGroupVM.loadedAppConfigs, id: \.self) { appConfig in
                     AppCell(config: .normal(appConfig: appConfig, action: {
@@ -84,6 +85,7 @@ struct AppsConfigView: View {
                     }))
                     
                 }
+                
             } else {
                 TextModifier(text: "No Apps to protect", fontConfig: .textStyle(style: .headline, weight: .semibold, design: .default), fgColor: .secondary, alignment: .leading, lineLimit: 2)
             }

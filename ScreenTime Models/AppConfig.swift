@@ -20,6 +20,11 @@ struct AppConfig: Codable, Hashable {
     var appIcon: String
     var familyActivitySelection: FamilyActivitySelection
     var deviceActivityName: String?
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(appName)
+    }
 }
 
 // Am Anfang zeigen wir eine Liste mit allen AppConfigs an -> Dann listen wir alle hinzugefügten ganz oben

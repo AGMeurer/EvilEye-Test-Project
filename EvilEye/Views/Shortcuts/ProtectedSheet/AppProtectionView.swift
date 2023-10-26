@@ -73,30 +73,32 @@ struct AppProtectionView: View {
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(.blue.gradient)
                 .frame(width: (UIScreen.main.bounds.width - 40) * (timerValue / 5), height: 10)
-               
+            
         } else {
-            VStack(spacing: 15) {
+            VStack {
+                TextModifier(text: "You choose", fontConfig: .textStyle(style: .title2, weight: .bold, design: .default), fgColor: .primary, alignment: .center, lineLimit: 1)
+                    .padding(.bottom, 5)
+                
                 Button(action: {
-                    dismiss()
+                    DispatchQueue.main.asyncAfter(deadline: .now()) {
+                        UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+                    }
                 }, label: {
                     PrimaryButtonLabel(buttonText: "Close", buttonState: .isEligible, isProgressing: false)
-                    
                 })
-                
                 
                 Button(action: {
-                    
-//                    ProtectFromAppIntent.openAppWhenRun = false
-                    
-                    if let url = URL(string: "instagram://") {
-                        UIApplication.shared.open(url)
+                    //- OpenAppWhenRun must be false when this button is pressed
+                    if let appID = appToProtect?.id {
+                        if let url = URL(string: "\(appID)://") {
+                            UIApplication.shared.open(url)
+                        }
                     }
-                    
                 }, label: {
-                    TextModifier(text: "Go back to \(app.appName)", fontConfig: .textStyle(style: .subheadline, weight: .semibold, design: .rounded), fgColor: .secondary, alignment: .center, lineLimit: 2)
+                    
+                    TextModifier(text: "Go back to \(appToProtect?.appName ?? "App not found")", fontConfig: .textStyle(style: .subheadline, weight: .medium, design: .default), fgColor: .primary, alignment: .center, lineLimit: 2)
                 })
             }
-           
         }
     }
     

@@ -36,7 +36,7 @@ class DeviceActivityScheduleVM: ObservableObject {
             
             //- 2 Creating a Event
             let events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [ .discouraged: DeviceActivityEvent(applications: appToken,
-                threshold: DateComponents(minute: 1)
+                                                                                                              threshold: DateComponents(second: 5)
                                                                                )
             ]
             

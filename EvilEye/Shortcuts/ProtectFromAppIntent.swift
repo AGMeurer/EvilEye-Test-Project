@@ -24,9 +24,7 @@ struct ProtectFromAppIntent: AppIntent {
     
     static var int: Int = 0
     
-    static var openAppWhenRun: Bool {
-        return int == 0 ? true : false
-    }
+    static var openAppWhenRun: Bool = true
     
     ///- Note: String displayed in Intent Shortcuts App
     static var parameterSummary: some ParameterSummary {

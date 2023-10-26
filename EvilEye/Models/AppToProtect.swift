@@ -23,7 +23,7 @@ struct AppToProtect: Identifiable, AppEntity {
     var displayRepresentation: AppIntents.DisplayRepresentation {
       DisplayRepresentation(
         title: "\(appName)",
-        image: appIcon == nil ? .init(systemName: "book.closed") : .init(data: appIcon!.data)
+        image: appIcon == nil ? .init(systemName: "nosign.app") : .init(data: appIcon!.data)
       )
     }
     

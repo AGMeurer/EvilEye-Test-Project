@@ -33,7 +33,7 @@ class DeviceActivityService {
                 threshold: DateComponents(second: 10))
             ]
             print("MONITORING: 3. Created Event")
-            
+                 
             let activity = DeviceActivityName.fromId(String(appConfig.id))
             print("MONITORING: 4. Created Activity named: \(activity.rawValue)")
             
